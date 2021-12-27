@@ -5,14 +5,12 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26632
 http://toptentv.xyz:8080/3143333180178705/2598854265/26629
 #EXTINF:-1 ,France 3
 http://toptentv.xyz:8080/3143333180178705/2598854265/26628
-#EXTINF:-1 ,France 4
+#EXTINF:-1 tvg-id="France4.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.postimg.cc/4x58Zkcg/fr4.png" group-title="Kids",France 4
 http://toptentv.xyz:8080/3143333180178705/2598854265/26627
 #EXTINF:-1 ,France 5
 http://toptentv.xyz:8080/3143333180178705/2598854265/26626
 #EXTINF:-1 tvg-id="M6.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://static.epg.best/fr/M6.fr.png" group-title="Entertainment",M6
 http://toptentv.xyz:8080/3143333180178705/2598854265/26631
-#EXTINF:-1 ,M6 INTER
-http://toptentv.xyz:8080/3143333180178705/2598854265/198341
 #EXTINF:-1 ,CANAL+
 http://toptentv.xyz:8080/3143333180178705/2598854265/26558
 #EXTINF:-1 ,CANAL+ CINEMA
