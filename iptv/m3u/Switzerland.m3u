@@ -7,6 +7,8 @@ http://destiny4k.com:2086/live/ramotestcihaz/n5juaD9vaH7OPzZzY8Sj/55370.ts
 http://destiny4k.com:2086/live/ramotestcihaz/n5juaD9vaH7OPzZzY8Sj/55383.ts
 #EXTINF:-1 ,Teleclub Animal Planet
 http://destiny4k.com:2086/live/ramotestcihaz/n5juaD9vaH7OPzZzY8Sj/55398.ts
+#EXTINF:-1 ,RTS UN
+http://cms-portals.com:80/hajro/qDJtRRAx4Y/6823
 #EXTINF:-1 ,RTS Deux
 http://destiny4k.com:2086/live/ramotestcihaz/n5juaD9vaH7OPzZzY8Sj/55409.ts
 #EXTINF:-1 ,SWISS1
@@ -27,21 +29,19 @@ http://103.194.169.171:8282/ch_canal9/mono.m3u8?token=93a611c10082e5eec57f8bec55
 http://103.194.169.171:8282/CH_rro/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c
 #EXTINF:-1 ,S1
 http://103.194.169.171:8282/SW:S1_HD/mono.m3u8?token=93a611c10082e5eec57f8bec55d8dc4c
-#EXTINF:-1 ,SWISS: SRF 2
+#EXTINF:-1 ,SRF 2
 http://cms-portals.com:80/hajro/qDJtRRAx4Y/6835
-#EXTINF:-1 ,SWISS: 3sat
+#EXTINF:-1 ,3sat
 http://cms-portals.com:80/hajro/qDJtRRAx4Y/6852
-#EXTINF:-1 ,SWISS: SAT. 1
+#EXTINF:-1 ,SAT. 1
 http://cms-portals.com:80/hajro/qDJtRRAx4Y/6839
-#EXTINF:-1 ,SWISS: SRF zwei
+#EXTINF:-1 ,SRF zwei
 http://cms-portals.com:80/hajro/qDJtRRAx4Y/6838
-#EXTINF:-1 ,SWISS: Tele Basel
+#EXTINF:-1 ,Tele Basel
 http://cms-portals.com:80/hajro/qDJtRRAx4Y/6830
-#EXTINF:-1 ,SWISS: RTS UN
-http://cms-portals.com:80/hajro/qDJtRRAx4Y/6823
-#EXTINF:-1 ,RTS 1
+#EXTINF:-1 tvg-id="RTS1.ch" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F60e1746cbf4e0523.2Epng/80x80/quality/80/rts-un.png",RTS UN
 http://toptentv.xyz:8080/3143333180178705/2598854265/166330
-#EXTINF:-1 ,RTS 2
+#EXTINF:-1 tvg-id="RTS2.ch" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Ff7a17b60dfb95311.2Epng/80x80/quality/80/rts-deux.png",RTS DEUX
 http://toptentv.xyz:8080/3143333180178705/2598854265/166331
 #EXTINF:-1 ,SRF 1
 http://toptentv.xyz:8080/3143333180178705/2598854265/166332
