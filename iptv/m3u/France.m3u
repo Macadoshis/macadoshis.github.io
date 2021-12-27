@@ -1,7 +1,7 @@
 #EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/fr/chaines-tv.orange.fr.epg.xml,https://iptv-org.github.io/epg/guides/fr/programme-tv.net.epg.xml"
-#EXTINF:-1 tvg-id="TF1.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/CJAbJfM.png" group-title="Entertainment",TF1
+#EXTINF:-1 tvg-id="TF1.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fb135fa67915e7108.2Epng/80x80/quality/80/tf1.png" group-title="Entertainment",TF1
 http://toptentv.xyz:8080/3143333180178705/2598854265/26632
-#EXTINF:-1 tvg-id="France2.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.postimg.cc/SKxgxTLz/fr2.png" group-title="General",France 2
+#EXTINF:-1 tvg-id="France2.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F103e8652743fb85c.2Epng/80x80/quality/80/france-2.png" group-title="General",France 2
 http://toptentv.xyz:8080/3143333180178705/2598854265/26629
 #EXTINF:-1 tvg-id="France3.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F538bd0ab029ec10f.2Epng/80x80/quality/80/france-3.png",France 3
 http://toptentv.xyz:8080/3143333180178705/2598854265/26628
@@ -19,185 +19,181 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26557
 http://toptentv.xyz:8080/3143333180178705/2598854265/26555
 #EXTINF:-1 tvg-id="CanalPlusSeriesFrance.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F15f9142717737457.2Epng/80x80/quality/80/canalplus-series.png",CANAL+ SERIES
 http://toptentv.xyz:8080/3143333180178705/2598854265/26554
-#EXTINF:-1 tvg-id="CanalPlusSportFrance.fr" tvg-logo="",CANAL+ SPORT
+#EXTINF:-1 tvg-id="CanalPlusSportFrance.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F34edf105c6ab5bb3.2Epng/80x80/quality/80/canalplus-sport.png",CANAL+ SPORT
 http://toptentv.xyz:8080/3143333180178705/2598854265/26553
-#EXTINF:-1 tvg-id="CinePlusClassic.fr" tvg-logo="",CINE+ CLASSIC
+#EXTINF:-1 tvg-id="CinePlusClassic.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F948c15c1e727f933.2Epng/80x80/quality/80/cineplus-classic.png",CINE+ CLASSIC
 http://toptentv.xyz:8080/3143333180178705/2598854265/26550
-#EXTINF:-1 tvg-id="CinePlusClub.fr" tvg-logo="",CINE+ CLUB
+#EXTINF:-1 tvg-id="CinePlusClub.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F8aee3a5747ca3748.2Epng/80x80/quality/80/cineplus-club.png",CINE+ CLUB
 http://toptentv.xyz:8080/3143333180178705/2598854265/26549
-#EXTINF:-1 tvg-id="CinePlusEmotion.fr" tvg-logo="",CINE+ EMOTION
+#EXTINF:-1 tvg-id="CinePlusEmotion.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fc373c1f102a19717.2Epng/80x80/quality/80/cineplus-emotion.png",CINE+ EMOTION
 http://toptentv.xyz:8080/3143333180178705/2598854265/26548
-#EXTINF:-1 tvg-id="CinePlusFamiz.fr" tvg-logo="",CINE+ FAMIZ
+#EXTINF:-1 tvg-id="CinePlusFamiz.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fbb1959649d9db96e.2Epng/80x80/quality/80/cineplus-famiz.png",CINE+ FAMIZ
 http://toptentv.xyz:8080/3143333180178705/2598854265/26547
-#EXTINF:-1 tvg-id="CinePlusFrisson.fr" tvg-logo="",CINE+ FRISSON
+#EXTINF:-1 tvg-id="CinePlusFrisson.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F06760c20b56de3a1.2Epng/80x80/quality/80/cineplus-frisson.png",CINE+ FRISSON
 http://toptentv.xyz:8080/3143333180178705/2598854265/26546
-#EXTINF:-1 tvg-id="CinePlusPremier.fr" tvg-logo="",CINE+ PREMIER
+#EXTINF:-1 tvg-id="CinePlusPremier.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F667ecc48d131858f.2Epng/80x80/quality/80/cineplus-premier.png",CINE+ PREMIER
 http://toptentv.xyz:8080/3143333180178705/2598854265/26545
-#EXTINF:-1 tvg-id="OCSCity.fr" tvg-logo="",OCS CITY
+#EXTINF:-1 tvg-id="OCSCity.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fbddfd405300617d1.2Epng/80x80/quality/80/ocs-city.png",OCS CITY
 http://toptentv.xyz:8080/3143333180178705/2598854265/26541
-#EXTINF:-1 tvg-id="OCSgeants.fr" tvg-logo="",OCS GEANTS
+#EXTINF:-1 tvg-id="OCSgeants.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F1532d832b8988490.2Epng/80x80/quality/80/ocs-geants.png",OCS GEANTS
 http://toptentv.xyz:8080/3143333180178705/2598854265/26540
-#EXTINF:-1 tvg-id="OCSmax.fr" tvg-logo="",OCS MAX
+#EXTINF:-1 tvg-id="OCSmax.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F8e7dd7073de4e672.2Epng/80x80/quality/80/ocs-max.png",OCS MAX
 http://toptentv.xyz:8080/3143333180178705/2598854265/26539
-#EXTINF:-1 tvg-id="BeInSports1.qa" tvg-logo="",BEIN SPORTS 1
+#EXTINF:-1 tvg-id="BeInSports1.qa" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fde4a30fc0d5ae0fb.2Epng/80x80/quality/80/bein-sports-1.png",BEIN SPORTS 1
 http://toptentv.xyz:8080/3143333180178705/2598854265/43709
-#EXTINF:-1 tvg-id="BeInSports2.qa" tvg-logo="",BEIN SPORTS 2
+#EXTINF:-1 tvg-id="BeInSports2.qa" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fb9a55933ae1efa9f.2Epng/80x80/quality/80/bein-sports-2.png",BEIN SPORTS 2
 http://toptentv.xyz:8080/3143333180178705/2598854265/26574
-#EXTINF:-1 tvg-id="BeInSports3.qa" tvg-logo="",BEIN SPORTS 3
+#EXTINF:-1 tvg-id="BeInSports3.qa" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fe2d51f42bb299144.2Epng/80x80/quality/80/bein-sports-3.png",BEIN SPORTS 3
 http://toptentv.xyz:8080/3143333180178705/2598854265/26573
-#EXTINF:-1 tvg-id="RMCSport2.fr" tvg-logo="",RMC SPORT 2
+#EXTINF:-1 tvg-id="RMCSport2.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Ff15d79b3ed596c02.2Epng/80x80/quality/80/rmc-sport-2.png",RMC SPORT 2
 http://toptentv.xyz:8080/3143333180178705/2598854265/26561
 #EXTINF:-1 tvg-id="RMCSport3.fr" tvg-logo="",RMC SPORT LIVE 3
 http://toptentv.xyz:8080/3143333180178705/2598854265/26560
-#EXTINF:-1 tvg-id="13emeRue.us" tvg-logo="",13 EME RUE
+#EXTINF:-1 tvg-id="13emeRue.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F9f685e8c3f593e23.2Epng/80x80/quality/80/13eme-rue.png",13 EME RUE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26595
-#EXTINF:-1 tvg-id="6ter.fr" tvg-logo="",6TER
+#EXTINF:-1 tvg-id="6ter.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F78d3868849bda0d1.2Epng/80x80/quality/80/6ter.png",6TER
 http://toptentv.xyz:8080/3143333180178705/2598854265/26619
-#EXTINF:-1 tvg-id="W9.fr" tvg-logo="",W9
+#EXTINF:-1 tvg-id="W9.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fed387febe69b441e.2Epng/80x80/quality/80/w9.png",W9
 http://toptentv.xyz:8080/3143333180178705/2598854265/26630
-#EXTINF:-1 tvg-id="NRJ12" tvg-logo="",NRJ12
+#EXTINF:-1 tvg-id="NRJ12.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F4c98dcaa97e4d4b9.2Epng/80x80/quality/80/nrj-12.png",NRJ12
 http://toptentv.xyz:8080/3143333180178705/2598854265/26509
-#EXTINF:-1 tvg-id="ARTE" tvg-logo="",ARTE
+#EXTINF:-1 tvg-id="ARTEFrancais.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fa90e328a33530e43.2Epng/80x80/quality/80/arte.png",ARTE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26615
-#EXTINF:-1 tvg-id="AB1" tvg-logo="",AB1
+#EXTINF:-1 tvg-id="AB1.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fb20d8d6067d0a0fb.2Epng/80x80/quality/80/ab-1.png",AB1
 http://toptentv.xyz:8080/3143333180178705/2598854265/26602
-#EXTINF:-1 tvg-id="AB3" tvg-logo="",AB3
+#EXTINF:-1 tvg-id="AB3.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F73256ac605467345.2Epng/80x80/quality/80/ab-3.png",AB3
 http://toptentv.xyz:8080/3143333180178705/2598854265/26601
-#EXTINF:-1 tvg-id="ACTION" tvg-logo="",ACTION
+#EXTINF:-1 tvg-id="Action.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F90b6d1100b343061.2Epng/80x80/quality/80/action.png",ACTION
 http://toptentv.xyz:8080/3143333180178705/2598854265/26608
-#EXTINF:-1 tvg-id="C8" tvg-logo="",C8
+#EXTINF:-1 tvg-id="C8.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F235b43a3f45b0e01.2Epng/80x80/quality/80/c8.png",C8
 http://toptentv.xyz:8080/3143333180178705/2598854265/26622
-#EXTINF:-1 tvg-id="COMEDIE+" tvg-logo="",COMEDIE+
+#EXTINF:-1 tvg-id="ComediePlus.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fd1c08d8979efde42.2Epng/80x80/quality/80/comedieplus.png",COMEDIE+
 http://toptentv.xyz:8080/3143333180178705/2598854265/26543
-#EXTINF:-1 tvg-id="CSTAR" tvg-logo="",CSTAR
+#EXTINF:-1 tvg-id="CStar.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fedf447677d732bcf.2Epng/80x80/quality/80/cstar.png",CSTAR
 http://toptentv.xyz:8080/3143333180178705/2598854265/26618
-#EXTINF:-1 tvg-id="PARAMOUNT CHANNEL" tvg-logo="",PARAMOUNT CHANNEL
+#EXTINF:-1 tvg-id="ParamountChannelFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F71598b0a23df3400.2Epng/80x80/quality/80/paramount-channel.png",PARAMOUNT CHANNEL
 http://toptentv.xyz:8080/3143333180178705/2598854265/26582
-#EXTINF:-1 tvg-id="PARIS PREMIERE" tvg-logo="",PARIS PREMIERE
+#EXTINF:-1 tvg-id="ParisPremiere.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fc2af46afb7c06205.2Epng/80x80/quality/80/paris-premiere.png",PARIS PREMIERE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26609
-#EXTINF:-1 tvg-id="POLAR+" tvg-logo="",POLAR+
+#EXTINF:-1 tvg-id="PolarPlus.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F3baeb47b9e43ba0f.2Epng/80x80/quality/80/polarplus.png",POLAR+
 http://toptentv.xyz:8080/3143333180178705/2598854265/26544
-#EXTINF:-1 tvg-id="RTL9" tvg-logo="",RTL9
+#EXTINF:-1 tvg-id="RTL9.lu" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F48d5a56240d15d0d.2Epng/80x80/quality/80/rtl-9.png",RTL9
 http://toptentv.xyz:8080/3143333180178705/2598854265/26606
-#EXTINF:-1 tvg-id="RTS DEUX" tvg-logo="",RTS DEUX
+#EXTINF:-1 tvg-id="RTS2.ch" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Ff7a17b60dfb95311.2Epng/80x80/quality/80/rts-deux.png",RTS DEUX
 http://toptentv.xyz:8080/3143333180178705/2598854265/26605
-#EXTINF:-1 tvg-id="RTS UN" tvg-logo="",RTS UN
+#EXTINF:-1 tvg-id="RTS1.ch" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F60e1746cbf4e0523.2Epng/80x80/quality/80/rts-un.png",RTS UN
 http://toptentv.xyz:8080/3143333180178705/2598854265/26604
-#EXTINF:-1 tvg-id="SEASONS" tvg-logo="",SEASONS
+#EXTINF:-1 tvg-id="Seasons.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fcbb991cfb2e01459.2Epng/80x80/quality/80/seasons.png",SEASONS
 http://toptentv.xyz:8080/3143333180178705/2598854265/26590
-#EXTINF:-1 tvg-id="SERIE CLUB" tvg-logo="",SERIE CLUB
+#EXTINF:-1 tvg-id="SerieClub.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F4138c8b2772a2dff.2Epng/80x80/quality/80/serieclub.png",SERIE CLUB
 http://toptentv.xyz:8080/3143333180178705/2598854265/26551
-#EXTINF:-1 tvg-id="SYFY" tvg-logo="",SYFY
+#EXTINF:-1 tvg-id="SyfyFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Feced977574ce3c7d.2Epng/80x80/quality/80/syfy.png",SYFY
 http://toptentv.xyz:8080/3143333180178705/2598854265/26603
-#EXTINF:-1 tvg-id="TCM CINEMA" tvg-logo="",TCM CINEMA
+#EXTINF:-1 tvg-id="TCMCinema.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F2bf52adf1cb3a799.2Epng/80x80/quality/80/tcm-cinema.png",TCM CINEMA
 http://toptentv.xyz:8080/3143333180178705/2598854265/26598
-#EXTINF:-1 tvg-id="TEVA" tvg-logo="",TEVA
+#EXTINF:-1 tvg-id="Teva.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Ff74ef71f3478dbfe.2Epng/80x80/quality/80/teva.png",TEVA
 http://toptentv.xyz:8080/3143333180178705/2598854265/26607
-#EXTINF:-1 tvg-id="TF1 SERIES FILMS" tvg-logo="",TF1 SERIES FILMS
+#EXTINF:-1 tvg-id="TF1SeriesFilms.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F6462f56efcb3a8cf.2Epng/80x80/quality/80/tf1-series-films.png",TF1 SERIES FILMS
 http://toptentv.xyz:8080/3143333180178705/2598854265/26621
-#EXTINF:-1 tvg-id="TFX" tvg-logo="",TFX
+#EXTINF:-1 tvg-id="TFX.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fa3a1051d580698d2.2Epng/80x80/quality/80/tfx.png",TFX
 http://toptentv.xyz:8080/3143333180178705/2598854265/26620
-#EXTINF:-1 tvg-id="TMC" tvg-logo="",TMC
+#EXTINF:-1 tvg-id="TMC.mc" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F080b60e09531e7f7.2Epng/80x80/quality/80/tmc.png",TMC
 http://toptentv.xyz:8080/3143333180178705/2598854265/26597
-#EXTINF:-1 tvg-id="TREK" tvg-logo="",TREK
+#EXTINF:-1 tvg-id="Trek.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F1ee38327a5d1fdc1.2Epng/80x80/quality/80/trek.png",TREK
 http://toptentv.xyz:8080/3143333180178705/2598854265/26522
-#EXTINF:-1 tvg-id="TV5 MONDE" tvg-logo="",TV5 MONDE
+#EXTINF:-1 tvg-id="TV5MondeFranceBelgiqueSuisse.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F594a2877e42090c3.2Epng/80x80/quality/80/tv5monde.png",TV5 MONDE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26614
-#EXTINF:-1 tvg-id="ANIMAUX" tvg-logo="",ANIMAUX
+#EXTINF:-1 tvg-id="Animaux.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F5aecd862dcdc98eb.2Epng/80x80/quality/80/animaux.png",ANIMAUX
 http://toptentv.xyz:8080/3143333180178705/2598854265/26591
-#EXTINF:-1 tvg-id="CRIME DISTRICT" tvg-logo="",CRIME DISTRICT
+#EXTINF:-1 tvg-id="CrimeDistrict.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fcc45fa584350b316.2Epng/80x80/quality/80/crime-district.png",CRIME DISTRICT
 http://toptentv.xyz:8080/3143333180178705/2598854265/26588
-#EXTINF:-1 tvg-id="DISCOVERY CH" tvg-logo="",DISCOVERY CH
+#EXTINF:-1 tvg-id="DiscoveryChannelFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F1d0ed5f556b2e9a0.2Epng/80x80/quality/80/discovery-channel.png",DISCOVERY CH
 http://toptentv.xyz:8080/3143333180178705/2598854265/26586
-#EXTINF:-1 tvg-id="DISCOVERY SC" tvg-logo="",DISCOVERY SC
+#EXTINF:-1 tvg-id="DiscoveryScienceFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F2e42b962957520df.2Epng/80x80/quality/80/discovery-science.png",DISCOVERY SC
 http://toptentv.xyz:8080/3143333180178705/2598854265/26585
-#EXTINF:-1 tvg-id="HISTOIRE" tvg-logo="",HISTOIRE
+#EXTINF:-1 tvg-id="HistoireTV.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F7efb47266df978d4.2Epng/80x80/quality/80/histoire-tv.png",HISTOIRE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26587
-#EXTINF:-1 tvg-id="NAT GEO" tvg-logo="",NAT GEO
+#EXTINF:-1 tvg-id="NationalGeographicFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F20f8a4fb70b9cc3f.2Epng/80x80/quality/80/national-geographic.png",NAT GEO
 http://toptentv.xyz:8080/3143333180178705/2598854265/26584
-#EXTINF:-1 tvg-id="NAT GEO WILD" tvg-logo="",NAT GEO WILD
+#EXTINF:-1 tvg-id="NationalGeographicWildFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F60070f3a6e681d56.2Epng/80x80/quality/80/nat-geo-wild.png",NAT GEO WILD
 http://toptentv.xyz:8080/3143333180178705/2598854265/26583
 #EXTINF:-1 tvg-id="PLANETE+ A&E",PLANETE+ A&E
 http://toptentv.xyz:8080/3143333180178705/2598854265/26580
-#EXTINF:-1 tvg-id="PLANETE+ CI" tvg-logo="",PLANETE+ CI
+#EXTINF:-1 tvg-id="PlanetePlusCI.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F756e5a8456df51a6.2Epng/80x80/quality/80/planeteplus-crime-investigation.png",PLANETE+ CI
 http://toptentv.xyz:8080/3143333180178705/2598854265/26579
-#EXTINF:-1 tvg-id="PLANETE+" tvg-logo="",PLANETE+
+#EXTINF:-1 tvg-id="PlanetePlus.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F32d0d78d405b9da4.2Epng/80x80/quality/80/planeteplus.png",PLANETE+
 http://toptentv.xyz:8080/3143333180178705/2598854265/26581
-#EXTINF:-1 tvg-id="RMC DECOUVERTE" tvg-logo="",RMC DECOUVERTE
+#EXTINF:-1 tvg-id="RMCDecouverte.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fbaabdcee74ff73b0.2Epng/80x80/quality/80/rmc-decouverte.png",RMC DECOUVERTE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26578
-#EXTINF:-1 tvg-id="RMC STORY" tvg-logo="",RMC STORY
+#EXTINF:-1 tvg-id="RMCStory.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fd7dcfd95af960356.2Epng/80x80/quality/80/rmc-story.png",RMC STORY
 http://toptentv.xyz:8080/3143333180178705/2598854265/26617
-#EXTINF:-1 tvg-id="SCIENCE & VIE TV",SCIENCE & VIE TV
+#EXTINF:-1 tvg-id="ScienceVieTV.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fed5ccfd62febd636.2Epng/80x80/quality/80/science-vie-tv.png",SCIENCE & VIE TV
 http://toptentv.xyz:8080/3143333180178705/2598854265/26577
-#EXTINF:-1 tvg-id="USHUAIA TV" tvg-logo="",USHUAIA TV
+#EXTINF:-1 tvg-id="UUshuaiaTV.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F3f415c7d48955a36.2Epng/80x80/quality/80/ushuaia-tv.png",USHUAIA TV
 http://toptentv.xyz:8080/3143333180178705/2598854265/26593
-#EXTINF:-1 tvg-id="BOOMERANG" tvg-logo="",BOOMERANG
+#EXTINF:-1 tvg-id="BoomerangFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fd58540e22cde3e6b.2Epng/80x80/quality/80/boomerang.png",BOOMERANG
 http://toptentv.xyz:8080/3143333180178705/2598854265/26537
-#EXTINF:-1 tvg-id="CANAL J" tvg-logo="",CANAL J
+#EXTINF:-1 tvg-id="CanalJ.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F412b6dbd5944ee2e.2Epng/80x80/quality/80/canal-j.png",CANAL J
 http://toptentv.xyz:8080/3143333180178705/2598854265/26536
-#EXTINF:-1 tvg-id="CARTOON NETWORK" tvg-logo="",CARTOON NETWORK
+#EXTINF:-1 tvg-id="CartoonNetworkFrance.us tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Ff17c7cb22db63335.2Epng/80x80/quality/80/cartoon-network.png",CARTOON NETWORK
 http://toptentv.xyz:8080/3143333180178705/2598854265/26535
-#EXTINF:-1 tvg-id="DISNEY CHANNEL" tvg-logo="",DISNEY CHANNEL
+#EXTINF:-1 tvg-id="DisneyChannelFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fc9646796471c4935.2Epng/80x80/quality/80/disney-channel.png",DISNEY CHANNEL
 http://toptentv.xyz:8080/3143333180178705/2598854265/26534
-#EXTINF:-1 tvg-id="DISNEY JUNIOR" tvg-logo="",DISNEY JUNIOR
+#EXTINF:-1 tvg-id="DisneyJuniorFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F05ea9bc422cbce5a.2Epng/80x80/quality/80/disney-junior.png",DISNEY JUNIOR
 http://toptentv.xyz:8080/3143333180178705/2598854265/26532
-#EXTINF:-1 tvg-id="MANGAS" tvg-logo="",MANGAS
+#EXTINF:-1 tvg-id="Mangas.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fb016b6172507a992.2Epng/80x80/quality/80/mangas.png",MANGAS
 http://toptentv.xyz:8080/3143333180178705/2598854265/26528
-#EXTINF:-1 tvg-id="NICK JUNIOR" tvg-logo="",NICK JUNIOR
+#EXTINF:-1 tvg-id="NickelodeonJuniorFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F4b71c4a12bc4f9fb.2Epng/80x80/quality/80/nickelodeon-junior.png",NICKELODEON JUNIOR
 http://toptentv.xyz:8080/3143333180178705/2598854265/26527
-#EXTINF:-1 tvg-id="NICKELODEON" tvg-logo="",NICKELODEON
+#EXTINF:-1 tvg-id="NickelodeonFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F95acdcae963db13f.2Epng/80x80/quality/80/nickelodeon.png",NICKELODEON
 http://toptentv.xyz:8080/3143333180178705/2598854265/26526
-#EXTINF:-1 tvg-id="GULLI" tvg-logo="",GULLI
+#EXTINF:-1 tvg-id="Gulli.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F1395961145ab0792.2Epng/80x80/quality/80/gulli.png",GULLI
 http://toptentv.xyz:8080/3143333180178705/2598854265/26529
-#EXTINF:-1 tvg-id="PIWI+" tvg-logo="",PIWI+
+#EXTINF:-1 tvg-id="PiwiPlus.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fc1f927d307caa7c9.2Epng/80x80/quality/80/piwiplus.png",PIWI+
 http://toptentv.xyz:8080/3143333180178705/2598854265/26525
-#EXTINF:-1 tvg-id="TIJI" tvg-logo="",TIJI
+#EXTINF:-1 tvg-id="Tiji.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F56eb445b93040a13.2Epng/80x80/quality/80/tiji.png",TIJI
 http://toptentv.xyz:8080/3143333180178705/2598854265/26524
-#EXTINF:-1 tvg-id="TOONAMI" tvg-logo="",TOONAMI
+#EXTINF:-1 tvg-id="ToonamiFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F894762a3b560abbe.2Epng/80x80/quality/80/toonami.png",TOONAMI
 http://toptentv.xyz:8080/3143333180178705/2598854265/26523
 #EXTINF:-1 tvg-id="CANAL NEWS" tvg-logo="",CANAL NEWS
 http://toptentv.xyz:8080/3143333180178705/2598854265/26611
-#EXTINF:-1 tvg-id="CHERIE 25" tvg-logo="",CHERIE 25
+#EXTINF:-1 tvg-id="Cherie25.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F181566dd9f26f57c.2Epng/80x80/quality/80/cherie-25.png",CHERIE 25
 http://toptentv.xyz:8080/3143333180178705/2598854265/26600
-#EXTINF:-1 tvg-id="FRANCE 24" tvg-logo="",FRANCE 24
+#EXTINF:-1 tvg-id="France24Francais.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F346bdb37b26c595d.2Epng/80x80/quality/80/france-24.png",FRANCE 24
 http://toptentv.xyz:8080/3143333180178705/2598854265/26623
-#EXTINF:-1 tvg-id="FRANCE INFO" tvg-logo="",FRANCE INFO
+#EXTINF:-1 tvg-id="Franceinfo.fr" tvg-logo="https://proxymedia.woopic.com/api/v1/images/553%2Flogos%2Fv2%2Flogos%2Flivetv_franceinfo%2F20151026_092415%2FwebTVLogo%2Flogo_180x96.png",FRANCE INFO
 http://toptentv.xyz:8080/3143333180178705/2598854265/26624
-#EXTINF:-1 tvg-id="LCP" tvg-logo="",LCP
+#EXTINF:-1 tvg-id="LCPAssembleeNationale.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F3451fb6ba76d65a3.2Epng/80x80/quality/80/la-chaine-parlementaire.png",LCP
 http://toptentv.xyz:8080/3143333180178705/2598854265/26610
-#EXTINF:-1 tvg-id="EURONEWS" tvg-logo="",EURONEWS
+#EXTINF:-1 tvg-id="EuroNewsFrancais.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F4d533d11ae677191.2Epng/80x80/quality/80/euronews.png",EURONEWS
 http://toptentv.xyz:8080/3143333180178705/2598854265/26616
-#EXTINF:-1 tvg-id="BFM TV" tvg-logo="",BFM TV
+#EXTINF:-1 tvg-id="BFMTV.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F303aefb752306964.2Epng/80x80/quality/80/bfmtv.png",BFM TV
 http://toptentv.xyz:8080/3143333180178705/2598854265/26612
-#EXTINF:-1 tvg-id="BFM BUSINESS" tvg-logo="",BFM BUSINESS
+#EXTINF:-1 tvg-id="BFMBusiness.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fa95d527b9237396a.2Epng/80x80/quality/80/bfm-business.png",BFM BUSINESS
 http://toptentv.xyz:8080/3143333180178705/2598854265/26613
-#EXTINF:-1 tvg-id="EQUIDIA LIVE" tvg-logo="",EQUIDIA LIVE
+#EXTINF:-1 tvg-id="Equidia.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Ff383b6bf34653e41.2Epng/80x80/quality/80/equidia.png",EQUIDIA LIVE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26572
-#EXTINF:-1 tvg-id="EUROSPORT 1" tvg-logo="",EUROSPORT 1
+#EXTINF:-1 tvg-id="Eurosport1France.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F2087e8fcd4ea995a.2Epng/80x80/quality/80/eurosport-1.png",EUROSPORT 1
 http://toptentv.xyz:8080/3143333180178705/2598854265/26571
-#EXTINF:-1 tvg-id="EUROSPORT 2" tvg-logo="",EUROSPORT 2
+#EXTINF:-1 tvg-id="Eurosport2France.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fae6ce1a5b9af9f5c.2Epng/80x80/quality/80/eurosport-2.png",EUROSPORT 2
 http://toptentv.xyz:8080/3143333180178705/2598854265/26570
 #EXTINF:-1 tvg-id="EXTREME SPORTS" tvg-logo="",EXTREME SPORTS
 http://toptentv.xyz:8080/3143333180178705/2598854265/26569
-#EXTINF:-1 tvg-id="GOLF CHANNEL" tvg-logo="",GOLF CHANNEL
-http://toptentv.xyz:8080/3143333180178705/2598854265/26567
-#EXTINF:-1 tvg-id="GOLF+" tvg-logo="",GOLF+
-http://toptentv.xyz:8080/3143333180178705/2598854265/26568
-#EXTINF:-1 tvg-id="INFOSPORT+" tvg-logo="",INFOSPORT+
+#EXTINF:-1 tvg-id="InfoSportPlus.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F2f3c91733b3531ad.2Epng/80x80/quality/80/infosportplus.png",INFOSPORT+
 http://toptentv.xyz:8080/3143333180178705/2598854265/26565
-#EXTINF:-1 tvg-id="L'EQUIPE 21",L'EQUIPE 21
+#EXTINF:-1 tvg-id="LEquipe.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F3e622e97b162f954.2Epng/80x80/quality/80/lequipe.png",L'EQUIPE 21
 http://toptentv.xyz:8080/3143333180178705/2598854265/26563
-#EXTINF:-1 tvg-id="AUTOMOTO LA CHAINE" tvg-logo="",AUTOMOTO LA CHAINE
+#EXTINF:-1 tvg-id="Automotolachaine.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Ff270237546c43721.2Epng/80x80/quality/80/automoto.png",AUTOMOTO LA CHAINE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26576
-#EXTINF:-1 tvg-id="GAME ONE" tvg-logo="",GAME ONE
+#EXTINF:-1 tvg-id="GameOne.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Ff7e21d4035acb3d8.2Epng/80x80/quality/80/game-one.png",GAME ONE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26530
-#EXTINF:-1 tvg-id="BET" tvg-logo="",BET
+#EXTINF:-1 tvg-id="BETFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fc64f47ad5d2e1aad.2Epng/80x80/quality/80/bet.png",BET
 http://toptentv.xyz:8080/3143333180178705/2598854265/26515
 #EXTINF:-1 tvg-id="BRAVA" tvg-logo="",BRAVA
 http://toptentv.xyz:8080/3143333180178705/2598854265/26506
-#EXTINF:-1 tvg-id="E! ENTERTAINMENT",E! ENTERTAINMENT
+#EXTINF:-1 tvg-id="EFrance.us",E! ENTERTAINMENT
 http://toptentv.xyz:8080/3143333180178705/2598854265/26520
-#EXTINF:-1 tvg-id="M6 MUSIC" tvg-logo="",M6 MUSIC
+#EXTINF:-1 tvg-id="M6Music.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F660a2f4e2d7969b8.2Epng/80x80/quality/80/m6-music.png",M6 MUSIC
 http://toptentv.xyz:8080/3143333180178705/2598854265/26516
 #EXTINF:-1 tvg-id="MCM TOP" tvg-logo="",MCM TOP
 http://toptentv.xyz:8080/3143333180178705/2598854265/26513
@@ -207,11 +203,11 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26512
 http://toptentv.xyz:8080/3143333180178705/2598854265/26511
 #EXTINF:-1 tvg-id="MTV DANCE" tvg-logo="",MTV DANCE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26518
-#EXTINF:-1 tvg-id="MTV FRANCE" tvg-logo="",MTV FRANCE
+#EXTINF:-1 tvg-id="MTVFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fde443059649bd9f2.2Epng/80x80/quality/80/mtv.png",MTV FRANCE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26510
-#EXTINF:-1 tvg-id="MTV HITS" tvg-logo="",MTV HITS
+#EXTINF:-1 tvg-id="MMTVHitsEurope.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fe0ed184fadf9b1c3.2Epng/80x80/quality/80/mtv-hits.png",MTV HITS
 http://toptentv.xyz:8080/3143333180178705/2598854265/26517
-#EXTINF:-1 tvg-id="RFM TV" tvg-logo="",RFM TV
+#EXTINF:-1 tvg-id="RFMTV.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F0bb870fe13dbcdd0.2Epng/80x80/quality/80/rfm-tv.png",RFM TV
 http://toptentv.xyz:8080/3143333180178705/2598854265/26599
 #EXTINF:-1 tvg-id="TV BREIZH" tvg-logo="",TV BREIZH
 http://toptentv.xyz:8080/3143333180178705/2598854265/26596
@@ -222,8 +218,6 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26495
 #EXTINF:-1 tvg-id="CANAL PLAY 9" tvg-logo="",CANAL PLAY 9
 http://toptentv.xyz:8080/3143333180178705/2598854265/26489
 #EXTINF:-1 tvg-id="TF1 H265" tvg-logo="",TF1 H265
-http://toptentv.xyz:8080/3143333180178705/2598854265/36678
-#EXTINF:-1 tvg-id="TF1  1 H265" tvg-logo="",TF1  1 H265
 http://toptentv.xyz:8080/3143333180178705/2598854265/36679
 #EXTINF:-1 tvg-id="FRANCE 2 H265" tvg-logo="",FRANCE 2 H265
 http://toptentv.xyz:8080/3143333180178705/2598854265/36680
