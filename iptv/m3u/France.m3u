@@ -22,7 +22,7 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26597
 #EXTINF:-1 tvg-id="TFX.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fa3a1051d580698d2.2Epng/80x80/quality/80/tfx.png",TFX
 http://toptentv.xyz:8080/3143333180178705/2598854265/26620
 #EXTINF:-1 tvg-id="NRJ12.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F4c98dcaa97e4d4b9.2Epng/80x80/quality/80/nrj-12.png",NRJ12
-http://toptentv.xyz:8080/3143333180178705/2598854265/26509
+http://toptentv.xyz:8080/3143333180178705/2598854265/36728
 #EXTINF:-1 tvg-id="LCPAssembleeNationale.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F3451fb6ba76d65a3.2Epng/80x80/quality/80/la-chaine-parlementaire.png",LCP
 http://toptentv.xyz:8080/3143333180178705/2598854265/26610
 #EXTINF:-1 tvg-id="France4.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.postimg.cc/4x58Zkcg/fr4.png" group-title="Kids",France 4
@@ -48,9 +48,9 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26578
 #EXTINF:-1 tvg-id="Cherie25.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F181566dd9f26f57c.2Epng/80x80/quality/80/cherie-25.png",CHERIE 25
 http://toptentv.xyz:8080/3143333180178705/2598854265/26600
 #EXTINF:-1 tvg-id="LCI.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F4e6b08b1d8ae79a2.2Epng/80x80/quality/80/lci-la-chaine-info.png",LCI
-http://toptentv.xyz:8080/3143333180178705/2598854265/26293
+https://lci-hls-live-ssl.tf1.fr/lci/1/hls/live_2328.m3u8
 #EXTINF:-1 tvg-id="Franceinfo.fr" tvg-logo="https://proxymedia.woopic.com/api/v1/images/553%2Flogos%2Fv2%2Flogos%2Flivetv_franceinfo%2F20151026_092415%2FwebTVLogo%2Flogo_180x96.png",FRANCE INFO
-http://toptentv.xyz:8080/3143333180178705/2598854265/26624
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/franceinfo/live
 #EXTINF:-1 tvg-id="CanalPlusCinemaFrance.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F50ca7342d6f08a52.2Epng/80x80/quality/80/canalplus-cinema.png",CANAL+ CINEMA
 http://toptentv.xyz:8080/3143333180178705/2598854265/26557
 #EXTINF:-1 tvg-id="CanalPlusFamilyFrance.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fcb26e6eef90e30ae.2Epng/80x80/quality/80/canalplus-kids.png",CANAL+ KIDS
