@@ -67,6 +67,8 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26532
 http://toptentv.xyz:8080/3143333180178705/2598854265/26528
 #EXTINF:-1 tvg-id="NickelodeonJuniorFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F4b71c4a12bc4f9fb.2Epng/80x80/quality/80/nickelodeon-junior.png",NICKELODEON JUNIOR
 http://toptentv.xyz:8080/3143333180178705/2598854265/26527
+#EXTINF:-1 tvg-id="NickelodeonTeen.us" tvg-logo="https://proxymedia.woopic.com/api/v1/images/553%2Flogos%2Fv2%2Flogos%2Flivetv_nickelodeon_4teen%2F20200615_173007%2FwebTVLogo%2Flogo_180x96.png",NICKELODEON TEEN
+http://toptentv.xyz:8080/3143333180178705/2598854265/26244
 #EXTINF:-1 tvg-id="NickelodeonFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F95acdcae963db13f.2Epng/80x80/quality/80/nickelodeon.png",NICKELODEON
 http://toptentv.xyz:8080/3143333180178705/2598854265/26526
 #EXTINF:-1 tvg-id="PiwiPlus.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fc1f927d307caa7c9.2Epng/80x80/quality/80/piwiplus.png",PIWI+
@@ -109,10 +111,14 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/43709
 http://toptentv.xyz:8080/3143333180178705/2598854265/26574
 #EXTINF:-1 tvg-id="BeInSports3.qa" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fe2d51f42bb299144.2Epng/80x80/quality/80/bein-sports-3.png",BEIN SPORTS 3
 http://toptentv.xyz:8080/3143333180178705/2598854265/26573
+#EXTINF:-1 tvg-id="RMCSport1.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F31faf7b24b2816de.2Epng/80x80/quality/80/rmc-sport-1.png",RMC SPORT 1
+http://toptentv.xyz:8080/3143333180178705/2598854265/35591
 #EXTINF:-1 tvg-id="RMCSport2.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Ff15d79b3ed596c02.2Epng/80x80/quality/80/rmc-sport-2.png",RMC SPORT 2
 http://toptentv.xyz:8080/3143333180178705/2598854265/26561
-#EXTINF:-1 tvg-id="RMCSport3.fr" tvg-logo="",RMC SPORT LIVE 3
+#EXTINF:-1 tvg-id="RMCSport3.fr" tvg-logo="https://1.bp.blogspot.com/-oaNLWMDLun8/YJnBEvy_eXI/AAAAAAAAFlk/Gkc8O0qBjkkHHKOWskIv1dKDP8rPVZbDgCLcBGAsYHQ/w320-h180/Rmc%2BSport%2B3%252C%2BRmc%2BSport%2B2%252C%2BRmc%2BSport%2B1%252C%2BRmc%2BSport%2B4%252C%2BRmc%2BSport%2BLive%2B5%252C%2BRmc%2BSport%2BLive%2B6%252C%2BRmc%2BSport%2BLive%2B7%252C%2BRmc%2BSport%2BLive%2B8%252C%2BRmc%2BSport%2BLive%2B9%252C%2BRmc%2BSport%2BLive%2B10%252C%2BRmc%2BSport%2BNews%252C%2BRegarder%2BFrance%2BTV%2Ben%2Bdirect.jpg",RMC SPORT LIVE 3
 http://toptentv.xyz:8080/3143333180178705/2598854265/26560
+#EXTINF:-1 tvg-id="RMCSport6.fr" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/b/b1/RMC_SPORT_LIVE_6_2018_OFFICIEL.png/revision/latest/scale-to-width-down/300?cb=20191103085110",RMC SPORT LIVE 6
+http://toptentv.xyz:8080/3143333180178705/2598854265/35579
 #EXTINF:-1 tvg-id="13emeRue.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F9f685e8c3f593e23.2Epng/80x80/quality/80/13eme-rue.png",13 EME RUE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26595
 #EXTINF:-1 tvg-id="AB1.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fb20d8d6067d0a0fb.2Epng/80x80/quality/80/ab-1.png",AB1
@@ -161,6 +167,10 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26588
 http://toptentv.xyz:8080/3143333180178705/2598854265/26586
 #EXTINF:-1 tvg-id="DiscoveryScienceFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F2e42b962957520df.2Epng/80x80/quality/80/discovery-science.png",DISCOVERY SC
 http://toptentv.xyz:8080/3143333180178705/2598854265/26585
+#EXTINF:-1 tvg-id="DiscoveryFamily.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F2ae4f854864bc49a.2Epng/80x80/quality/80/discovery-family.png",DISCOVERY FAMILY
+http://toptentv.xyz:8080/3143333180178705/2598854265/36742
+#EXTINF:-1 tvg-id="DISCOVERY INVESTIGATION H265" tvg-logo="https://content.osn.com/logo/channel/cropped/DCX.png",DISCOVERY INVESTIGATION
+http://toptentv.xyz:8080/3143333180178705/2598854265/36743
 #EXTINF:-1 tvg-id="HistoireTV.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F7efb47266df978d4.2Epng/80x80/quality/80/histoire-tv.png",HISTOIRE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26587
 #EXTINF:-1 tvg-id="NationalGeographicFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F20f8a4fb70b9cc3f.2Epng/80x80/quality/80/national-geographic.png",NAT GEO
@@ -211,15 +221,15 @@ http://live.alsace20.fr/live/alsace20/ngrp:alsace20_all/playlist.m3u8
 http://tv7.hdr-tv.com:1935/live/tv7/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="BRAVA" tvg-logo="",BRAVA
 http://toptentv.xyz:8080/3143333180178705/2598854265/26506
-#EXTINF:-1 tvg-id="EFrance.us",E! ENTERTAINMENT
+#EXTINF:-1 tvg-id="EFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F4ca961b5ce6028e1.2Epng/80x80/quality/80/e.png",E! ENTERTAINMENT
 http://toptentv.xyz:8080/3143333180178705/2598854265/26520
 #EXTINF:-1 tvg-id="M6Music.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F660a2f4e2d7969b8.2Epng/80x80/quality/80/m6-music.png",M6 MUSIC
 http://toptentv.xyz:8080/3143333180178705/2598854265/26516
-#EXTINF:-1 tvg-id="MCM TOP" tvg-logo="",MCM TOP
+#EXTINF:-1 tvg-id="MCMTop.fr" tvg-logo="https://www.zap.co.ao/media/cache/movie_thumb/uploads/ao/channels/5d260d3fab701.png",MCM TOP
 http://toptentv.xyz:8080/3143333180178705/2598854265/26513
-#EXTINF:-1 tvg-id="MEZZO" tvg-logo="",MEZZO
+#EXTINF:-1 tvg-id="Mezzo.fr" tvg-logo="https://www.sms.cz/kategorie/televize/bmp/loga/velka/Mezzo.png",MEZZO
 http://toptentv.xyz:8080/3143333180178705/2598854265/26512
-#EXTINF:-1 tvg-id="MEZZO LIVE" tvg-logo="",MEZZO LIVE
+#EXTINF:-1 tvg-id="MezzoLiveHD.fr" tvg-logo="https://www.sms.cz/kategorie/televize/bmp/loga/velka/mezzo_live_hd.png",MEZZO LIVE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26511
 #EXTINF:-1 tvg-id="MTV DANCE" tvg-logo="",MTV DANCE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26518
@@ -227,9 +237,17 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26518
 http://toptentv.xyz:8080/3143333180178705/2598854265/26510
 #EXTINF:-1 tvg-id="MMTVHitsEurope.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fe0ed184fadf9b1c3.2Epng/80x80/quality/80/mtv-hits.png",MTV HITS
 http://toptentv.xyz:8080/3143333180178705/2598854265/26517
+#EXTINF:-1 tvg-id="TraceNaija.fr" tvg-logo="https://rndcdn.dstv.com/dstvcms/2017/06/22/DStv_TraceNaija_Logo_4-3_003_xlrg.png",TRACE NAIJA
+http://toptentv.xyz:8080/3143333180178705/2598854265/26238
+#EXTINF:-1 tvg-id="TraceMziki.fr" tvg-logo="https://rndcdn.dstv.com/dstvcms/2017/06/22/DStv_TraceMziki_Logo_4-3_003_xlrg.png",TRACE MZIKI
+http://toptentv.xyz:8080/3143333180178705/2598854265/26239
+#EXTINF:-1 tvg-id="TraceGospel.fr" tvg-logo="https://service.canal-overseas.com/image-api/v1/image/42646029bf3d9e08872a895fe5d45d83",TRACE GOSPEL
+http://toptentv.xyz:8080/3143333180178705/2598854265/26240
+#EXTINF:-1 tvg-id="TraceLatina.fr" tvg-logo="https://service.canal-overseas.com/image-api/v1/image/cdc37d99bc44ca2127712b28d1e291ca",TRACE LATINA
+http://toptentv.xyz:8080/3143333180178705/2598854265/26241
 #EXTINF:-1 tvg-id="RFMTV.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F0bb870fe13dbcdd0.2Epng/80x80/quality/80/rfm-tv.png",RFM TV
 http://toptentv.xyz:8080/3143333180178705/2598854265/26599
-#EXTINF:-1 tvg-id="TV BREIZH" tvg-logo="",TV BREIZH
+#EXTINF:-1 tvg-id="TVBreizh.fr" tvg-logo="https://service.canal-overseas.com/image-api/v1/image/79a93db5be4cb827e593141ee3429fea",TV BREIZH
 http://toptentv.xyz:8080/3143333180178705/2598854265/26596
 #EXTINF:-1 tvg-id="CANAL PLAY 2" tvg-logo="",CANAL PLAY 2
 http://toptentv.xyz:8080/3143333180178705/2598854265/26496
