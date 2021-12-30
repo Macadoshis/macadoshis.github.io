@@ -75,6 +75,8 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26525
 http://toptentv.xyz:8080/3143333180178705/2598854265/26524
 #EXTINF:-1 tvg-id="ToonamiFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F894762a3b560abbe.2Epng/80x80/quality/80/toonami.png",TOONAMI
 http://toptentv.xyz:8080/3143333180178705/2598854265/26523
+#EXTINF:-1 tvg-id="JustepourRire.us" tvg-country="CH;FR" tvg-language="French" tvg-logo="http://images.pluto.tv/channels/60afa1508284e60007163c08/solidLogoPNG.png" group-title="Comedy",Juste pour Rire (720p)
+http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/60afa1508284e60007163c08/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=35fcc6e0-e986-11eb-a0af-c3b401f46211&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=a8b6a6bb-4f8c-438e-a638-d4cfa72ae69a
 #EXTINF:-1 tvg-id="CanalPlusCinemaFrance.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F50ca7342d6f08a52.2Epng/80x80/quality/80/canalplus-cinema.png",CANAL+ CINEMA
 http://toptentv.xyz:8080/3143333180178705/2598854265/26557
 #EXTINF:-1 tvg-id="CanalPlusFamilyFrance.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fcb26e6eef90e30ae.2Epng/80x80/quality/80/canalplus-kids.png",CANAL+ KIDS
@@ -145,6 +147,8 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26598
 http://toptentv.xyz:8080/3143333180178705/2598854265/26607
 #EXTINF:-1 tvg-id="Trek.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F1ee38327a5d1fdc1.2Epng/80x80/quality/80/trek.png",TREK
 http://toptentv.xyz:8080/3143333180178705/2598854265/26522
+#EXTINF:-1 tvg-id="IqraaEuropeAfrica.sa" tvg-country="SA" tvg-language="English" tvg-logo="https://i.imgur.com/3bug9dU.png" group-title="Religious",Iqraa Europe Africa (576p) [Not 24/7]
+https://iqraac.cdn.mangomolo.com/iqraa/smil:iqraar2.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5MondeFranceBelgiqueSuisse.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F594a2877e42090c3.2Epng/80x80/quality/80/tv5monde.png",TV5 MONDE
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877-b/v3plusinfo247hls/master.m3u8
 #EXTINF:-1 tvg-id="Animaux.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F5aecd862dcdc98eb.2Epng/80x80/quality/80/animaux.png",ANIMAUX
@@ -171,6 +175,10 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26581
 http://toptentv.xyz:8080/3143333180178705/2598854265/26577
 #EXTINF:-1 tvg-id="UshuaiaTV.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F3f415c7d48955a36.2Epng/80x80/quality/80/ushuaia-tv.png",USHUAIA TV
 http://toptentv.xyz:8080/3143333180178705/2598854265/26593
+#EXTINF:-1 tvg-id="RTFrance.ru" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/gVedXRh.png" group-title="News",RT France (1080p)
+https://rt-fra.gcdn.co/live/rtfrance/playlist.m3u8
+#EXTINF:-1 tvg-id="InfoWars.us" tvg-country="US" tvg-language="English" tvg-logo="https://i.imgur.com/MBsQp1e.png" group-title="News",InfoWars (720p)
+http://wpc.9ec1.edgecastcdn.net/249EC1/infowarshd-edgecast/hd720.m3u8
 #EXTINF:-1 tvg-id="CANAL NEWS" tvg-logo="",CANAL NEWS
 http://toptentv.xyz:8080/3143333180178705/2598854265/26611
 #EXTINF:-1 tvg-id="France24Francais.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F346bdb37b26c595d.2Epng/80x80/quality/80/france-24.png",FRANCE 24
@@ -195,6 +203,10 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26576
 http://toptentv.xyz:8080/3143333180178705/2598854265/26530
 #EXTINF:-1 tvg-id="BETFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fc64f47ad5d2e1aad.2Epng/80x80/quality/80/bet.png",BET
 http://toptentv.xyz:8080/3143333180178705/2598854265/26515
+#EXTINF:-1 tvg-id="Alsace20.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/S8TuhyF.png" group-title="Local",Alsace 20 (720p)
+http://live.alsace20.fr/live/alsace20/ngrp:alsace20_all/playlist.m3u8
+#EXTINF:-1 tvg-id="TV7Colmar.fr" tvg-country="FR" tvg-language="French" tvg-logo="http://i0.wp.com/quizho.com/wp-content/uploads/2019/08/t%C3%A9l%C3%A9chargement-42.jpg" group-title="Local",TV7 Colmar (576p)
+http://tv7.hdr-tv.com:1935/live/tv7/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="BRAVA" tvg-logo="",BRAVA
 http://toptentv.xyz:8080/3143333180178705/2598854265/26506
 #EXTINF:-1 tvg-id="EFrance.us",E! ENTERTAINMENT
@@ -423,6 +435,9 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/36790
 http://toptentv.xyz:8080/3143333180178705/2598854265/36791
 #EXTINF:-1 tvg-id="ONE TV H265" tvg-logo="",ONE TV H265
 http://toptentv.xyz:8080/3143333180178705/2598854265/36792
+#EXTINF:-1 tvg-id="FashionTV.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/HBksX8u.png" group-title="Lifestyle",Fashion TV (1080p)
+#https://fashiontv-fashiontv-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
+http://fash1043.cloudycdn.services/slive/ftv_pg16_adaptive.smil/media.m3u8
 #EXTINF:-1 tvg-id="TF1 SD" tvg-logo="",TF1 SD
 http://toptentv.xyz:8080/3143333180178705/2598854265/36577
 #EXTINF:-1 tvg-id="FRANCE 3 SD" tvg-logo="",FRANCE 3 SD
