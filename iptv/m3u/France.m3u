@@ -51,6 +51,30 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26600
 https://lci-hls-live-ssl.tf1.fr/lci/1/hls/live_2328.m3u8
 #EXTINF:-1 tvg-id="Franceinfo.fr" tvg-logo="https://proxymedia.woopic.com/api/v1/images/553%2Flogos%2Fv2%2Flogos%2Flivetv_franceinfo%2F20151026_092415%2FwebTVLogo%2Flogo_180x96.png",FRANCE INFO
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/franceinfo/live
+#EXTINF:-1 tvg-id="BoomerangFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fd58540e22cde3e6b.2Epng/80x80/quality/80/boomerang.png",BOOMERANG
+http://toptentv.xyz:8080/3143333180178705/2598854265/26537
+#EXTINF:-1 tvg-id="BoingFrance.it" tvg-logo="https://proxymedia.woopic.com/api/v1/images/553%2Flogos%2Fv2%2Flogos%2Flivetv_boing%2F20160712_120546%2FwebTVLogo%2Flogo_180x96.png",BOING
+http://toptentv.xyz:8080/3143333180178705/2598854265/26259
+#EXTINF:-1 tvg-id="CanalJ.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F412b6dbd5944ee2e.2Epng/80x80/quality/80/canal-j.png",CANAL J
+http://toptentv.xyz:8080/3143333180178705/2598854265/26536
+#EXTINF:-1 tvg-id="CartoonNetworkFrance.us tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Ff17c7cb22db63335.2Epng/80x80/quality/80/cartoon-network.png",CARTOON NETWORK
+http://toptentv.xyz:8080/3143333180178705/2598854265/26535
+#EXTINF:-1 tvg-id="DisneyChannelFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fc9646796471c4935.2Epng/80x80/quality/80/disney-channel.png",DISNEY CHANNEL
+http://toptentv.xyz:8080/3143333180178705/2598854265/26534
+#EXTINF:-1 tvg-id="DisneyJuniorFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F05ea9bc422cbce5a.2Epng/80x80/quality/80/disney-junior.png",DISNEY JUNIOR
+http://toptentv.xyz:8080/3143333180178705/2598854265/26532
+#EXTINF:-1 tvg-id="Mangas.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fb016b6172507a992.2Epng/80x80/quality/80/mangas.png",MANGAS
+http://toptentv.xyz:8080/3143333180178705/2598854265/26528
+#EXTINF:-1 tvg-id="NickelodeonJuniorFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F4b71c4a12bc4f9fb.2Epng/80x80/quality/80/nickelodeon-junior.png",NICKELODEON JUNIOR
+http://toptentv.xyz:8080/3143333180178705/2598854265/26527
+#EXTINF:-1 tvg-id="NickelodeonFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F95acdcae963db13f.2Epng/80x80/quality/80/nickelodeon.png",NICKELODEON
+http://toptentv.xyz:8080/3143333180178705/2598854265/26526
+#EXTINF:-1 tvg-id="PiwiPlus.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fc1f927d307caa7c9.2Epng/80x80/quality/80/piwiplus.png",PIWI+
+http://toptentv.xyz:8080/3143333180178705/2598854265/26525
+#EXTINF:-1 tvg-id="Tiji.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F56eb445b93040a13.2Epng/80x80/quality/80/tiji.png",TIJI
+http://toptentv.xyz:8080/3143333180178705/2598854265/26524
+#EXTINF:-1 tvg-id="ToonamiFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F894762a3b560abbe.2Epng/80x80/quality/80/toonami.png",TOONAMI
+http://toptentv.xyz:8080/3143333180178705/2598854265/26523
 #EXTINF:-1 tvg-id="CanalPlusCinemaFrance.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F50ca7342d6f08a52.2Epng/80x80/quality/80/canalplus-cinema.png",CANAL+ CINEMA
 http://toptentv.xyz:8080/3143333180178705/2598854265/26557
 #EXTINF:-1 tvg-id="CanalPlusFamilyFrance.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fcb26e6eef90e30ae.2Epng/80x80/quality/80/canalplus-kids.png",CANAL+ KIDS
@@ -137,7 +161,7 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26587
 http://toptentv.xyz:8080/3143333180178705/2598854265/26584
 #EXTINF:-1 tvg-id="NationalGeographicWildFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F60070f3a6e681d56.2Epng/80x80/quality/80/nat-geo-wild.png",NAT GEO WILD
 http://toptentv.xyz:8080/3143333180178705/2598854265/26583
-#EXTINF:-1 tvg-id="PLANETE+ A&E",PLANETE+ A&E
+#EXTINF:-1 tvg-id="PlanetePlusAE.fr" tvg-logo="https://service.canal-overseas.com/image-api/v1/image/425153f20b159d48011eee67c786885b",PLANETE+ A&E
 http://toptentv.xyz:8080/3143333180178705/2598854265/26580
 #EXTINF:-1 tvg-id="PlanetePlusCI.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F756e5a8456df51a6.2Epng/80x80/quality/80/planeteplus-crime-investigation.png",PLANETE+ CI
 http://toptentv.xyz:8080/3143333180178705/2598854265/26579
@@ -145,30 +169,8 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26579
 http://toptentv.xyz:8080/3143333180178705/2598854265/26581
 #EXTINF:-1 tvg-id="ScienceVieTV.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fed5ccfd62febd636.2Epng/80x80/quality/80/science-vie-tv.png",SCIENCE & VIE TV
 http://toptentv.xyz:8080/3143333180178705/2598854265/26577
-#EXTINF:-1 tvg-id="UUshuaiaTV.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F3f415c7d48955a36.2Epng/80x80/quality/80/ushuaia-tv.png",USHUAIA TV
+#EXTINF:-1 tvg-id="UshuaiaTV.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F3f415c7d48955a36.2Epng/80x80/quality/80/ushuaia-tv.png",USHUAIA TV
 http://toptentv.xyz:8080/3143333180178705/2598854265/26593
-#EXTINF:-1 tvg-id="BoomerangFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fd58540e22cde3e6b.2Epng/80x80/quality/80/boomerang.png",BOOMERANG
-http://toptentv.xyz:8080/3143333180178705/2598854265/26537
-#EXTINF:-1 tvg-id="CanalJ.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F412b6dbd5944ee2e.2Epng/80x80/quality/80/canal-j.png",CANAL J
-http://toptentv.xyz:8080/3143333180178705/2598854265/26536
-#EXTINF:-1 tvg-id="CartoonNetworkFrance.us tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Ff17c7cb22db63335.2Epng/80x80/quality/80/cartoon-network.png",CARTOON NETWORK
-http://toptentv.xyz:8080/3143333180178705/2598854265/26535
-#EXTINF:-1 tvg-id="DisneyChannelFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fc9646796471c4935.2Epng/80x80/quality/80/disney-channel.png",DISNEY CHANNEL
-http://toptentv.xyz:8080/3143333180178705/2598854265/26534
-#EXTINF:-1 tvg-id="DisneyJuniorFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F05ea9bc422cbce5a.2Epng/80x80/quality/80/disney-junior.png",DISNEY JUNIOR
-http://toptentv.xyz:8080/3143333180178705/2598854265/26532
-#EXTINF:-1 tvg-id="Mangas.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fb016b6172507a992.2Epng/80x80/quality/80/mangas.png",MANGAS
-http://toptentv.xyz:8080/3143333180178705/2598854265/26528
-#EXTINF:-1 tvg-id="NickelodeonJuniorFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F4b71c4a12bc4f9fb.2Epng/80x80/quality/80/nickelodeon-junior.png",NICKELODEON JUNIOR
-http://toptentv.xyz:8080/3143333180178705/2598854265/26527
-#EXTINF:-1 tvg-id="NickelodeonFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F95acdcae963db13f.2Epng/80x80/quality/80/nickelodeon.png",NICKELODEON
-http://toptentv.xyz:8080/3143333180178705/2598854265/26526
-#EXTINF:-1 tvg-id="PiwiPlus.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fc1f927d307caa7c9.2Epng/80x80/quality/80/piwiplus.png",PIWI+
-http://toptentv.xyz:8080/3143333180178705/2598854265/26525
-#EXTINF:-1 tvg-id="Tiji.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F56eb445b93040a13.2Epng/80x80/quality/80/tiji.png",TIJI
-http://toptentv.xyz:8080/3143333180178705/2598854265/26524
-#EXTINF:-1 tvg-id="ToonamiFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F894762a3b560abbe.2Epng/80x80/quality/80/toonami.png",TOONAMI
-http://toptentv.xyz:8080/3143333180178705/2598854265/26523
 #EXTINF:-1 tvg-id="CANAL NEWS" tvg-logo="",CANAL NEWS
 http://toptentv.xyz:8080/3143333180178705/2598854265/26611
 #EXTINF:-1 tvg-id="France24Francais.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F346bdb37b26c595d.2Epng/80x80/quality/80/france-24.png",FRANCE 24
