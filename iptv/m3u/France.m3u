@@ -215,14 +215,22 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26576
 http://toptentv.xyz:8080/3143333180178705/2598854265/26530
 #EXTINF:-1 tvg-id="BETFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2Fc64f47ad5d2e1aad.2Epng/80x80/quality/80/bet.png",BET
 http://toptentv.xyz:8080/3143333180178705/2598854265/26515
+#EXTINF:-1 tvg-id="EFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F4ca961b5ce6028e1.2Epng/80x80/quality/80/e.png",E! ENTERTAINMENT
+http://toptentv.xyz:8080/3143333180178705/2598854265/26520
 #EXTINF:-1 tvg-id="Alsace20.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/S8TuhyF.png" group-title="Local",Alsace 20
 http://live.alsace20.fr/live/alsace20/ngrp:alsace20_all/playlist.m3u8
 #EXTINF:-1 tvg-id="TV7Colmar.fr" tvg-country="FR" tvg-language="French" tvg-logo="http://i0.wp.com/quizho.com/wp-content/uploads/2019/08/t%C3%A9l%C3%A9chargement-42.jpg" group-title="Local",TV7 Colmar
 http://tv7.hdr-tv.com:1935/live/tv7/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBreizh.fr" tvg-logo="https://service.canal-overseas.com/image-api/v1/image/79a93db5be4cb827e593141ee3429fea",TV BREIZH
+http://toptentv.xyz:8080/3143333180178705/2598854265/26596
+#EXTINF:-1 tvg-id="CANAL PLAY 2" tvg-logo="",CANAL PLAY 2
+http://toptentv.xyz:8080/3143333180178705/2598854265/26496
+#EXTINF:-1 tvg-id="CANAL PLAY 3" tvg-logo="",CANAL PLAY 3
+http://toptentv.xyz:8080/3143333180178705/2598854265/26495
+#EXTINF:-1 tvg-id="CANAL PLAY 9" tvg-logo="",CANAL PLAY 9
+http://toptentv.xyz:8080/3143333180178705/2598854265/26489
 #EXTINF:-1 tvg-id="BRAVA" tvg-logo="",BRAVA
 http://toptentv.xyz:8080/3143333180178705/2598854265/26506
-#EXTINF:-1 tvg-id="EFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F4ca961b5ce6028e1.2Epng/80x80/quality/80/e.png",E! ENTERTAINMENT
-http://toptentv.xyz:8080/3143333180178705/2598854265/26520
 #EXTINF:-1 tvg-id="M6Music.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F660a2f4e2d7969b8.2Epng/80x80/quality/80/m6-music.png",M6 MUSIC
 http://toptentv.xyz:8080/3143333180178705/2598854265/26516
 #EXTINF:-1 tvg-id="MCMTop.fr" tvg-logo="https://www.zap.co.ao/media/cache/movie_thumb/uploads/ao/channels/5d260d3fab701.png",MCM TOP
@@ -245,16 +253,10 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/26239
 http://toptentv.xyz:8080/3143333180178705/2598854265/26240
 #EXTINF:-1 tvg-id="TraceLatina.fr" tvg-logo="https://service.canal-overseas.com/image-api/v1/image/cdc37d99bc44ca2127712b28d1e291ca",TRACE LATINA
 http://toptentv.xyz:8080/3143333180178705/2598854265/26241
+#EXTINF:-1 tvg-id="TraceUrban.fr" tvg-logo="https://service.canal-overseas.com/image-api/v1/image/02b09c0308344b3beeec0ea4dc3fe9ac",TRACE URBAN
+http://toptentv.xyz:8080/3143333180178705/2598854265/36790
 #EXTINF:-1 tvg-id="RFMTV.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F0bb870fe13dbcdd0.2Epng/80x80/quality/80/rfm-tv.png",RFM TV
 http://toptentv.xyz:8080/3143333180178705/2598854265/26599
-#EXTINF:-1 tvg-id="TVBreizh.fr" tvg-logo="https://service.canal-overseas.com/image-api/v1/image/79a93db5be4cb827e593141ee3429fea",TV BREIZH
-http://toptentv.xyz:8080/3143333180178705/2598854265/26596
-#EXTINF:-1 tvg-id="CANAL PLAY 2" tvg-logo="",CANAL PLAY 2
-http://toptentv.xyz:8080/3143333180178705/2598854265/26496
-#EXTINF:-1 tvg-id="CANAL PLAY 3" tvg-logo="",CANAL PLAY 3
-http://toptentv.xyz:8080/3143333180178705/2598854265/26495
-#EXTINF:-1 tvg-id="CANAL PLAY 9" tvg-logo="",CANAL PLAY 9
-http://toptentv.xyz:8080/3143333180178705/2598854265/26489
 #EXTINF:-1 tvg-id="TF1 H265" tvg-logo="",TF1 H265
 http://toptentv.xyz:8080/3143333180178705/2598854265/36679
 #EXTINF:-1 tvg-id="FRANCE 2 H265" tvg-logo="",FRANCE 2 H265
