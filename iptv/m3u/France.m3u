@@ -173,6 +173,8 @@ http://toptentv.xyz:8080/3143333180178705/2598854265/36742
 http://toptentv.xyz:8080/3143333180178705/2598854265/36743
 #EXTINF:-1 tvg-id="HistoireTV.fr" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F7efb47266df978d4.2Epng/80x80/quality/80/histoire-tv.png",HISTOIRE
 http://toptentv.xyz:8080/3143333180178705/2598854265/26587
+#EXTINF:-1 tvg-id="TouteHistoire.fr" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsVyU3p9zH2adF3LQURrUTfKMX0b4F8-B4oMvrdrdv--0HlIDH0LOXs-A",TOUTE L'HISTOIRE
+http://vpro.viptvclub.com:25443/V59Ssbxk605P/S8r5cjP9Ym/9208
 #EXTINF:-1 tvg-id="NationalGeographicFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F20f8a4fb70b9cc3f.2Epng/80x80/quality/80/national-geographic.png",NAT GEO
 http://toptentv.xyz:8080/3143333180178705/2598854265/26584
 #EXTINF:-1 tvg-id="NationalGeographicWildFrance.us" tvg-logo="https://www.programme-tv.net/imgre/fit/https.3A.2F.2Fprd2-tel-epg-img.2Es3-eu-west-1.2Eamazonaws.2Ecom.2Fchannel.2F60070f3a6e681d56.2Epng/80x80/quality/80/nat-geo-wild.png",NAT GEO WILD
@@ -223,11 +225,21 @@ http://live.alsace20.fr/live/alsace20/ngrp:alsace20_all/playlist.m3u8
 http://tv7.hdr-tv.com:1935/live/tv7/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBreizh.fr" tvg-logo="https://service.canal-overseas.com/image-api/v1/image/79a93db5be4cb827e593141ee3429fea",TV BREIZH
 http://toptentv.xyz:8080/3143333180178705/2598854265/26596
-#EXTINF:-1 tvg-id="CANAL PLAY 2" tvg-logo="",CANAL PLAY 2
+#EXTINF:-1 tvg-id="CANAL PLAY 1" tvg-logo="http://one-iptv.com/logoX/francetnt/canalplay.png",CANAL PLAY 1
+http://vpro.viptvclub.com:25443/V59Ssbxk605P/S8r5cjP9Ym/9322
+#EXTINF:-1 tvg-id="CANAL PLAY 2" tvg-logo="http://one-iptv.com/logoX/francetnt/canalplay.png",CANAL PLAY 2
 http://toptentv.xyz:8080/3143333180178705/2598854265/26496
-#EXTINF:-1 tvg-id="CANAL PLAY 3" tvg-logo="",CANAL PLAY 3
+#EXTINF:-1 tvg-id="CANAL PLAY 3" tvg-logo="http://one-iptv.com/logoX/francetnt/canalplay.png",CANAL PLAY 3
 http://toptentv.xyz:8080/3143333180178705/2598854265/26495
-#EXTINF:-1 tvg-id="CANAL PLAY 9" tvg-logo="",CANAL PLAY 9
+#EXTINF:-1 tvg-id="CANAL PLAY 4" tvg-logo="http://one-iptv.com/logoX/francetnt/canalplay.png",CANAL PLAY 4
+http://vpro.viptvclub.com:25443/V59Ssbxk605P/S8r5cjP9Ym/9319
+#EXTINF:-1 tvg-id="CANAL PLAY 5" tvg-logo="http://one-iptv.com/logoX/francetnt/canalplay.png",CANAL PLAY 5
+http://vpro.viptvclub.com:25443/V59Ssbxk605P/S8r5cjP9Ym/9318
+#EXTINF:-1 tvg-id="CANAL PLAY 6" tvg-logo="http://one-iptv.com/logoX/francetnt/canalplay.png",CANAL PLAY 6
+http://vpro.viptvclub.com:25443/V59Ssbxk605P/S8r5cjP9Ym/9317
+#EXTINF:-1 tvg-id="CANAL PLAY 7" tvg-logo="http://one-iptv.com/logoX/francetnt/canalplay.png",CANAL PLAY 7
+http://vpro.viptvclub.com:25443/V59Ssbxk605P/S8r5cjP9Ym/9316
+#EXTINF:-1 tvg-id="CANAL PLAY 9" tvg-logo="http://one-iptv.com/logoX/francetnt/canalplay.png",CANAL PLAY 9
 http://toptentv.xyz:8080/3143333180178705/2598854265/26489
 #EXTINF:-1 tvg-id="BRAVA" tvg-logo="",BRAVA
 http://toptentv.xyz:8080/3143333180178705/2598854265/26506
