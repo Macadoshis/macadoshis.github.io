@@ -1,0 +1,17 @@
+{
+  "name": "m3u",
+  "version": "1.0.0",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "generate": "node_modules/.bin/ts-node app.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "node-fetch": "^2.6.7",
+    "ts-node": "latest",
+    "tslib": "^2.3.1",
+    "typescript": "latest"
+  },
+  "type": "commonjs"
+}

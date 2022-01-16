@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    // `target` and `lib` match @tsconfig/bases for node12, since that's the oldest node LTS, so it's the oldest node we support
+    "lib": [
+      "es2019",
+      "es2020.promise",
+      "es2020.bigint",
+      "es2020.string",
+      "dom"
+    ],
+    "allowJs": true,
+    "outDir": "./dist",
+    "rootDir": "src",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "target": "es2019",
+    "typeRoots": [
+      "node_modules/@types",
+      "typings.d.ts"
+    ],
+    "strict": true,
+    "declaration": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "types": [
+      "node"
+    ],
+    "stripInternal": true,
+    "incremental": true,
+    "skipLibCheck": true,
+    "importsNotUsedAsValues": "error"
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}
