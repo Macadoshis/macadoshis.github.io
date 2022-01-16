@@ -50,20 +50,25 @@ async function main() {
     await fsPromises.mkdir("./dist");
     console.log(`successfully create ./dist`);
 
-    let m3u: string[] = ['#EXTM3U'];
+    let m3uALL: string[] = ['#EXTM3U'];
+    let m3uFR: string[] = ['#EXTM3U'];
 
     json.forEach((entry: M3uEntry) => {
         console.info(entry.name);
 
         if (entry.countries && entry.countries.map(s => s.code).includes("FR")) {
-            m3u.push(entryToM3u(entry));
-            m3u.push(entry.url);
+            m3uFR.push(entryToM3u(entry));
+            m3uFR.push(entry.url);
         }
+
+        m3uALL.push(entryToM3u(entry));
+        m3uALL.push(entry.url);
     });
 
-    await fsPromises.writeFile('./dist/playlist.m3u', m3u.join("\r\n"));
+    await fsPromises.writeFile('./dist/playlist-fr.m3u', m3uFR.join("\r\n"));
+    await fsPromises.writeFile('./dist/playlist-all.m3u', m3uALL.join("\r\n"));
 
-    console.info(m3u);
+    console.info(m3uFR);
 }
 
 main();
