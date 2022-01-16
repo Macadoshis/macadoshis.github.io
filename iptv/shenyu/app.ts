@@ -8,7 +8,7 @@ interface M3uEntry {
     tvg: { id: string, name: string, url: string };
 }
 
-function entryToM3u(entry: M3uEntry): string {
+function entryToM3u(entry: M3uEntry, includeLang: boolean = false): string {
     let ret: string = '#EXTINF:-1';
 
     if (entry.logo) {
@@ -27,7 +27,7 @@ function entryToM3u(entry: M3uEntry): string {
         ret += ` group-title="${entry.categories.map(c => c.name).join(";")}"`;
     }
 
-    ret += ' ,' + entry.name;
+    ret += ',' + entry.name + (includeLang && entry.languages && entry.languages.length > 0 ? ' (' + (entry.languages.map(e => e.code.toLocaleUpperCase()).join(", ")) + ')' : '');
     return ret;
 }
 
@@ -57,11 +57,11 @@ async function main() {
         console.info(entry.name);
 
         if (entry.countries && entry.countries.map(s => s.code).includes("FR")) {
-            m3uFR.push(entryToM3u(entry));
+            m3uFR.push(entryToM3u(entry, true));
             m3uFR.push(entry.url);
         }
 
-        m3uALL.push(entryToM3u(entry));
+        m3uALL.push(entryToM3u(entry, true));
         m3uALL.push(entry.url);
     });
 
