@@ -149,8 +149,6 @@ https://edge.vedge.infomaniak.com/livecast/ik:dbmtv/manifest.m3u8
 http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/xnv0Pgm.jpg" tvg-id="DWEnglish.de" tvg-name="DW English" group-title="News",DW English (ENG)
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/avIsx8W.png" tvg-id="EMCITV.fr" tvg-name="EMCI TV",EMCI TV (FRA)
-https://emci-fr-hls.akamaized.net/hls/live/2007265/emcifrhls/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/avIsx8W.png" tvg-id="EMCITV.fr" tvg-name="EMCI TV Montreal",EMCI TV Montreal (FRA)
 https://emci-td-hls.akamaized.net/hls/live/2007264/emcitdhls/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/X7YYFZR2/euronews.png" tvg-id="EuronewsEnglish.fr" tvg-name="Euronews English" group-title="News",Euronews English (ENG)
@@ -279,6 +277,8 @@ http://ott-cdn.ucom.am/s49/index.m3u8
 http://tv.mondeduloisir.fr:1935/tixtv/smil:web.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MetalTV.ru" tvg-name="Metal TV" tvg-logo="" group-title="Music",Metal TV (CAT, ARA, PUS, ENG, SQI, HYE, POR, SPA, DEU, NLD, SWE, AZE, BOS, BEN, FRA, BUL, MSA, DZO, NOR, BEL, ZHO, ELL, CES, DAN, EST, TIR, AMH, FIN, FAO, KAT, KAL, HRV, HUN, IND, GLE, HEB, HIN, FAS, ISL, ITA, JPN, KIR, KHM, KOR, KAZ, LAO, SIN, LIT, LAV, RON, SRP, MKD, MYA, MON, MLT, DIV, NEP, POL, RUS, KIN, SLV, SLK, SOM, THA, TGK, TUK, TUR, SWA, UKR, UZB, VIE, BIS, SMO, AFR)
 https://v2.catcast.tv/content/33816/index.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-0.tvprofil.com/cdn/100x40/10/img/kanali-logo/mezzo-logo.png" tvg-id="Mezzo.fr" tvg-name="Mezzo" group-title="Music",Mezzo (FRA)
+http://ott-cdn.ucom.am/s35/index.m3u8
 #EXTINF:-1 tvg-logo="http://images.pluto.tv/channels/60817e1aa6997500072d0d6d/solidLogoPNG.png" tvg-id="MotorvisionTV.de" tvg-name="Motorvision TV" group-title="Sports",Motorvision TV (FRA)
 http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/60817e1aa6997500072d0d6d/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=35fc51b0-e986-11eb-a0af-c3b401f46211&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=ede55dfe-45a7-4aa8-a283-7b8008be8d2e
 #EXTINF:-1 tvg-logo="https://i.imgur.com/W43rv1R.jpg" tvg-id="NancyWebTV.fr" tvg-name="Nancy Web TV" group-title="Local",Nancy Web TV (FRA)
