@@ -4,7 +4,9 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "generate": "node_modules/.bin/ts-node app.ts"
+    "generate": "node_modules/.bin/ts-node app.ts",
+    "bump": "git add -A . && git commit -m \"Update m3u\" && git push",
+    "publish": "npm run generate && npm run bump"
   },
   "devDependencies": {
     "@types/node": "^17.0.8",
