@@ -91,6 +91,8 @@ http://live.redtraffic.net/woman.m3u8
 https://live-hls-web-aje.getaj.net/AJE/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/BB93NQP.png" tvg-id="AlJazeeraEnglish.qa" tvg-name="Al Jazeera English" group-title="News",Al Jazeera English (ENG)
 http://ott-cdn.ucom.am/s23/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/0RQvs8y.png" tvg-id="AlpedHuezTV.fr" tvg-name="Alpe d’Huez TV",Alpe d’Huez TV (FRA)
+https://edge.vedge.infomaniak.com/livecast/ik:adhtv/chunklist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/S8TuhyF.png" tvg-id="Alsace20.fr" tvg-name="Alsace 20" group-title="Local",Alsace 20 (FRA)
 http://live.alsace20.fr/live/alsace20/ngrp:alsace20_all/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/EPIMMaB.png" tvg-id="AntenneReunion.fr" tvg-name="Antenne Réunion" group-title="Local",Antenne Réunion (FRA)
@@ -269,8 +271,6 @@ https://shls-m6-france-prod-dub.shahid.net/out/v1/c8a9f6e000cd4ebaa4d2fc7d18c159
 http://flusonic-4.platinum-tv.com/M6/mono.m3u8?token=test
 #EXTINF:-1 tvg-logo="https://i.imgur.com/KMGUuAX.png" tvg-id="MavTVSelect.us" tvg-name="MavTV Select" group-title="Sports",MavTV Select (ENG)
 https://mavtv-mavtvglobal-1-eu.rakuten.wurl.com/manifest/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://www.zap.co.ao/media/cache/movie_thumb/uploads/ao/channels/5d260d3fab701.png" tvg-id="MCMTop.fr" tvg-name="MCM Top" group-title="Music",MCM Top (FRA)
-http://ott-cdn.ucom.am/s49/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/QjjVd1M.jpg" tvg-id="MDL.fr" tvg-name="MDL",MDL (FRA)
 http://tv.mondeduloisir.fr:1935/tixtv/smil:web.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MetalTV.ru" tvg-name="Metal TV" tvg-logo="" group-title="Music",Metal TV (CAT, ARA, PUS, ENG, SQI, HYE, POR, SPA, DEU, NLD, SWE, AZE, BOS, BEN, FRA, BUL, MSA, DZO, NOR, BEL, ZHO, ELL, CES, DAN, EST, TIR, AMH, FIN, FAO, KAT, KAL, HRV, HUN, IND, GLE, HEB, HIN, FAS, ISL, ITA, JPN, KIR, KHM, KOR, KAZ, LAO, SIN, LIT, LAV, RON, SRP, MKD, MYA, MON, MLT, DIV, NEP, POL, RUS, KIN, SLV, SLK, SOM, THA, TGK, TUK, TUR, SWA, UKR, UZB, VIE, BIS, SMO, AFR)
@@ -372,9 +372,9 @@ https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f8ed80fa09f120007
 #EXTINF:-1 tvg-logo="http://images.pluto.tv/channels/60549d97cd7b090007c73314/solidLogoPNG.png" tvg-id="PlutoTVLesfillesdacote.us" tvg-name="Pluto TV Les filles d'à côté" group-title="Series",Pluto TV Les filles d'à côté (FRA)
 http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/60549d97cd7b090007c73314/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=2c8ba500-e98a-11eb-a932-2f3c780ff9ff&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=0e7a9749-ec3d-4fea-9861-01e153b22e40
 #EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5f8edb6df1ebb800072edf10/colorLogoPNG.png" tvg-id="PlutoTVLesNouveauxDetectives.us" tvg-name="Pluto TV Les Nouveaux Detectives" group-title="Series",Pluto TV Les Nouveaux Detectives (FRA)
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f8edb6df1ebb800072edf10/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=48.8582&deviceLon=2.3387&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=FR&serverSideAds=false&sessionID=cc7dc550-6be3-11eb-9c02-0242ac110002&sid=cc7dc550-6be3-11eb-9c02-0242ac110002&userId=
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5f8edb6df1ebb800072edf10/colorLogoPNG.png" tvg-id="PlutoTVLesNouveauxDetectives.us" tvg-name="Pluto TV Les Nouveaux Detectives" group-title="Series",Pluto TV Les Nouveaux Detectives (FRA)
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f8edb6df1ebb800072edf10/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5f8edb6df1ebb800072edf10/colorLogoPNG.png" tvg-id="PlutoTVLesNouveauxDetectives.us" tvg-name="Pluto TV Les Nouveaux Detectives" group-title="Series",Pluto TV Les Nouveaux Detectives (FRA)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f8edb6df1ebb800072edf10/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=48.8582&deviceLon=2.3387&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=FR&serverSideAds=false&sessionID=cc7dc550-6be3-11eb-9c02-0242ac110002&sid=cc7dc550-6be3-11eb-9c02-0242ac110002&userId=
 #EXTINF:-1 tvg-logo="http://images.pluto.tv/channels/6080411af03506000759916e/solidLogoPNG.png" tvg-id="PlutoTVLiveinConcert.us" tvg-name="Pluto TV Live in Concert" group-title="Music",Pluto TV Live in Concert (FRA)
 http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6080411af03506000759916e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=35fbb571-e986-11eb-a0af-c3b401f46211&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=9c6d294f-660b-47ef-bc20-1961faf21c6a
 #EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5f8ed6d569d2d4000864a976/colorLogoPNG.png" tvg-id="PlutoTVLouisLaBrocante.us" tvg-name="Pluto TV Louis La Brocante",Pluto TV Louis La Brocante (FRA)
