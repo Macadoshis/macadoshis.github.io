@@ -149,6 +149,8 @@ https://edge.vedge.infomaniak.com/livecast/ik:dbmtv/manifest.m3u8
 http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/xnv0Pgm.jpg" tvg-id="DWEnglish.de" tvg-name="DW English" group-title="News",DW English (ENG)
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+#EXTINF:-1 tvg-logo="https://i.imgur.com/avIsx8W.png" tvg-id="EMCITV.fr" tvg-name="EMCI TV",EMCI TV (FRA)
+https://emci-fr-hls.akamaized.net/hls/live/2007265/emcifrhls/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/avIsx8W.png" tvg-id="EMCITV.fr" tvg-name="EMCI TV Montreal",EMCI TV Montreal (FRA)
 https://emci-td-hls.akamaized.net/hls/live/2007264/emcitdhls/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/X7YYFZR2/euronews.png" tvg-id="EuronewsEnglish.fr" tvg-name="Euronews English" group-title="News",Euronews English (ENG)
@@ -259,8 +261,6 @@ http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/60afa1508284e600071
 https://livehdkto-lh.akamaihd.net/i/LiveStream_1@178944/master.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/xDLwsbY.png" tvg-id="LaChaineNormande.fr" tvg-name="La Chaîne normande (LCN)" group-title="Family",La Chaîne normande (LCN) (FRA)
 http://live.lachainenormande.fr/live/lcn/livestream/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/6VzdKEa.png" tvg-id="LCI.fr" tvg-name="LCI" group-title="News",LCI (FRA)
-https://lci-hls-live-ssl.tf1.fr/lci/1/hls/live_2328.m3u8
 #EXTINF:-1 tvg-logo="https://i.postimg.cc/rwBVxjj2/lcp.png" tvg-id="LCP.fr" tvg-name="LCP" group-title="Legislative",LCP (FRA)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/xji3qy
 #EXTINF:-1 tvg-logo="http://images.pluto.tv/channels/604f8d6c7877d40007791af0/solidLogoPNG.png" tvg-id="Loupe.us" tvg-name="Loupe",Loupe (FRA)
@@ -380,9 +380,9 @@ http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/6080411af0350600075
 #EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5f8ed6d569d2d4000864a976/colorLogoPNG.png" tvg-id="PlutoTVLouisLaBrocante.us" tvg-name="Pluto TV Louis La Brocante",Pluto TV Louis La Brocante (FRA)
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f8ed6d569d2d4000864a976/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=48.8582&deviceLon=2.3387&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=FR&serverSideAds=false&sessionID=cc7dc550-6be3-11eb-9c02-0242ac110002&sid=cc7dc550-6be3-11eb-9c02-0242ac110002&userId=
 #EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5f8eb71a26ed8300076433f9/colorLogoPNG.png" tvg-id="PlutoTVMADE.us" tvg-name="Pluto TV MADE",Pluto TV MADE (FRA)
-https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f8eb71a26ed8300076433f9/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
-#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5f8eb71a26ed8300076433f9/colorLogoPNG.png" tvg-id="PlutoTVMADE.us" tvg-name="Pluto TV MADE",Pluto TV MADE (FRA)
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f8eb71a26ed8300076433f9/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=48.8582&deviceLon=2.3387&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=FR&serverSideAds=false&sessionID=cc7dc550-6be3-11eb-9c02-0242ac110002&sid=cc7dc550-6be3-11eb-9c02-0242ac110002&userId=
+#EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5f8eb71a26ed8300076433f9/colorLogoPNG.png" tvg-id="PlutoTVMADE.us" tvg-name="Pluto TV MADE",Pluto TV MADE (FRA)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f8eb71a26ed8300076433f9/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
 #EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5f1ab3c7778230000735cf41/colorLogoPNG.png" tvg-id="PlutoTVMTVCatfishPlus.us" tvg-name="Pluto TV MTV Catfish+" group-title="Series",Pluto TV MTV Catfish+ (FRA)
 http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ff5ed0bb61f1200072ca4cd/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=2c8a1e61-e98a-11eb-a932-2f3c780ff9ff&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=0698157f-70d9-4890-978e-e648d753b321
 #EXTINF:-1 tvg-logo="https://images.pluto.tv/channels/5f92b56a367e170007cd43f4/colorLogoPNG.png" tvg-id="PlutoTVMTVClassic.us" tvg-name="Pluto TV MTV Classic" group-title="Music",Pluto TV MTV Classic (FRA)
