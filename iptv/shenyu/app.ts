@@ -38,7 +38,7 @@ async function main() {
     const response = await fetch("https://iptv-org.github.io/iptv/channels.json");
 
     if (response.status < 200 || response.status >= 300) {
-        throw new Error("wrong status code");
+        throw new Error("Wrong status code");
     }
 
     const json: Array<M3uEntry> = await response.json();
