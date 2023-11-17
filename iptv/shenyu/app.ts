@@ -27,7 +27,7 @@ function entryToM3u(entry: M3uEntry, includeLang: boolean = false): string {
         ret += ` group-title="${entry.categories.map(c => c.name).join(";")}"`;
     }
 
-    ret += ',' + entry.name + (includeLang && entry.languages && entry.languages.length > 0 ? ' (' + (entry.languages.map(e => e.code.toLocaleUpperCase()).join(", ")) + ')' : '');
+    ret += ',' + entry.name + (includeLang && entry.languages && entry.languages.length > 0 ? ' (' + (entry.languages.map(e => e.code?.toLocaleUpperCase()).join(", ")) + ')' : '');
     return ret;
 }
 
