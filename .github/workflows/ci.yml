@@ -1,4 +1,4 @@
-name: Checker
+name: M3U tester
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  checker:
+  m3u-tester:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout GitHub Repo
@@ -59,10 +59,16 @@ jobs:
           rm -rf ffmpeg ffprobe
           ln -s "$(which ffmpeg)" ./ffmpeg
           ln -s "$(which ffprobe)" ./ffprobe
-          sudo fallocate -l 2G /swapfile
+          sudo fallocate -l 4G /swapfile
           sudo chmod 600 /swapfile
           sudo mkswap /swapfile
           sudo swapon /swapfile
           free -h
-          #./ffmpeg -v info -i "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_5mb.mp4" -f null -
+      - name: Run M3U tester
+        run: |
+          cd stalker-to-m3u
           tools/./m3u-tester --m3uLocation="../m3u" --minSuccess=3 --maxFailures=50 --renamePrefix="_" --renameOnFailure="true" --threadsCount=10 --streamTester=ffmpeg
+      - name: Update M3U results
+        run: |
+          cd m3u
+          ls -lh *.m3u
