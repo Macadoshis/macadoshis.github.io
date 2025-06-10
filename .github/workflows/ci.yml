@@ -71,4 +71,10 @@ jobs:
       - name: Update M3U results
         run: |
           cd m3u
-          ls -lh *.m3u
+          echo "\u274C `ls _iptv-*.m3u | wc -l` ITV files UNhealthy"
+          echo "\u274C `ls _vod-*.m3u | wc -l` VOD files UNhealthy"
+          echo "\u274C `ls _series-*.m3u | wc -l` SERIES files UNhealthy"
+          echo "\u2705 `ls iptv-*.m3u | wc -l` ITV files healthy"
+          echo "\u2705 `ls vod-*.m3u | wc -l` VOD files healthy"
+          echo "\u2705 `ls series-*.m3u | wc -l` SERIES files healthy"
+          ./copy.sh
