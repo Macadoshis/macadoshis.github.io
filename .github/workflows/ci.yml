@@ -1,0 +1,35 @@
+name: Checker
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitHub Repo
+        uses: actions/checkout@v4
+      - name: Debug GitHub Secrets (safe)
+        run: |
+          echo "Username length: ${#BITBUCKET_USERNAME}"
+          echo "Password length: ${#BITBUCKET_APP_PASSWORD}"
+        env:
+          BITBUCKET_USERNAME: ${{ secrets.BB_USERNAME }}
+          BITBUCKET_APP_PASSWORD: ${{ secrets.BB_TOKEN }}
+      - name: Clone source repo
+        run: |
+          git config --global credential.helper ""
+          REPO_URL="https://bitbucket.org/SaadBenbouzid/m3u.git"
+          git clone https://${BITBUCKET_USERNAME}:${BITBUCKET_APP_PASSWORD}@${REPO_URL#https://}
+        env:
+          BITBUCKET_USERNAME: ${{ secrets.BB_USERNAME }}
+          BITBUCKET_APP_PASSWORD: ${{ secrets.BB_TOKEN }}
+      - name: Clone stalker repo
+        run: |
+          git clone https://github.com/Macadoshis/stalker-to-m3u.git
+      - name: List files
+        run: ls -lrth
