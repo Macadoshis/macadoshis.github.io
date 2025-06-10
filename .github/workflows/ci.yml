@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  checker:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout GitHub Repo
@@ -31,5 +31,38 @@ jobs:
       - name: Clone stalker repo
         run: |
           git clone https://github.com/Macadoshis/stalker-to-m3u.git
-      - name: List files
-        run: ls -lrth
+      - name: Configure NODE
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ vars.NODE_VERSION }}
+      - name: Prepare m3u files
+        run: |
+          cd m3u
+          chmod u+x *.sh
+          ./restore.sh > /dev/null
+          ./reset.sh > /dev/null
+          echo "`ls *.m3u | wc -l` files restored"
+        env:
+          PGP_PWD: ${{ secrets.PGP_PWD }}
+      - name: Prepare stalker environment
+        run: |
+          cd stalker-to-m3u
+          node -v
+          npm -v
+          npm config set loglevel info
+          chmod u+x configure
+          chmod u+x tools/m3u-tester
+          ./configure
+          sudo add-apt-repository ppa:savoury1/ffmpeg4
+          sudo apt update
+          sudo apt install ffmpeg
+          rm -rf ffmpeg ffprobe
+          ln -s "$(which ffmpeg)" ./ffmpeg
+          ln -s "$(which ffprobe)" ./ffprobe
+          sudo fallocate -l 2G /swapfile
+          sudo chmod 600 /swapfile
+          sudo mkswap /swapfile
+          sudo swapon /swapfile
+          free -h
+          #./ffmpeg -v info -i "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_5mb.mp4" -f null -
+          tools/./m3u-tester --m3uLocation="../m3u" --minSuccess=3 --maxFailures=50 --renamePrefix="_" --renameOnFailure="true" --threadsCount=10 --streamTester=ffmpeg
