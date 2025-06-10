@@ -59,20 +59,34 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ vars.NODE_VERSION }}
-      - name: Prepare m3u files
+      - name: Restore m3u files
         run: |
           cd m3u
           chmod u+x *.sh
           ./restore.sh > /dev/null
-          if [[ -n "${{ inputs.m3u }}" ]]; then
+          echo "`ls *.m3u | wc -l` files restored"
+        env:
+          PGP_PWD: ${{ secrets.PGP_PWD }}
+      - name: Update summary
+        run: |
+          cd m3u
+          echo "## CURRENT content" >> $GITHUB_STEP_SUMMARY
+          echo -e "| Type    | \u274C #                   | \u2705 #                  |" >> $GITHUB_STEP_SUMMARY
+          echo -e "|---------|----------------------------|---------------------------|" >> $GITHUB_STEP_SUMMARY
+          echo -e "| IPTV    | `ls _iptv-*.m3u | wc -l`   | `ls iptv-*.m3u | wc -l`   |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| VOD     | `ls _vod-*.m3u | wc -l`    | `ls vod-*.m3u | wc -l`    |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| SERIES  | `ls _series-*.m3u | wc -l` | `ls series-*.m3u | wc -l` |" >> $GITHUB_STEP_SUMMARY
+      - name: Prepare m3u files
+        run: |
+          cd m3u
+          if [[ -z "${{ inputs.m3u }}" ]]; then
             echo "Resetting m3u..."
             ./reset.sh > /dev/null
           else
             echo "NOT resetting m3u..."
+            mv "_${{ inputs.m3u }}" ${{ inputs.m3u }} && echo "${{ inputs.m3u }} has been reset" || echo "No _${{ inputs.m3u }} to reset"
           fi
-          echo "`ls *.m3u | wc -l` files restored"
-        env:
-          PGP_PWD: ${{ secrets.PGP_PWD }}
+
       - name: Prepare stalker environment
         run: |
           cd stalker-to-m3u
@@ -97,18 +111,24 @@ jobs:
         run: |
           cd stalker-to-m3u
           # do not output progression
+          set +e
           tools/./m3u-tester --m3uLocation="../m3u/${{ inputs.m3u }}" --minSuccess=${{ inputs.minSuccess || 3 }} --maxFailures=${{ inputs.maxFailures || 50 }} --renamePrefix="_" --renameOnFailure="true" --threadsCount=10 --streamTester=${{ inputs.streamTester || 'ffmpeg' }} > /dev/null
+          set -e
+      - name: Update summary
+        run: |
+          cd m3u
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## RESULT content" >> $GITHUB_STEP_SUMMARY
+          echo -e "| Type    | \u274C #                   | \u2705 #                  |" >> $GITHUB_STEP_SUMMARY
+          echo -e "|---------|----------------------------|---------------------------|" >> $GITHUB_STEP_SUMMARY
+          echo -e "| IPTV    | `ls _iptv-*.m3u | wc -l`   | `ls iptv-*.m3u | wc -l`   |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| VOD     | `ls _vod-*.m3u | wc -l`    | `ls vod-*.m3u | wc -l`    |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| SERIES  | `ls _series-*.m3u | wc -l` | `ls series-*.m3u | wc -l` |" >> $GITHUB_STEP_SUMMARY
       - name: Update M3U results
         run: |
           cd m3u
-          echo -e "\u274C `ls _iptv-*.m3u | wc -l` ITV files UNhealthy"
-          echo -e "\u274C `ls _vod-*.m3u | wc -l` VOD files UNhealthy"
-          echo -e "\u274C `ls _series-*.m3u | wc -l` SERIES files UNhealthy"
-          echo -e "\u2705 `ls iptv-*.m3u | wc -l` ITV files healthy"
-          echo -e "\u2705 `ls vod-*.m3u | wc -l` VOD files healthy"
-          echo -e "\u2705 `ls series-*.m3u | wc -l` SERIES files healthy"
           git config user.email "${{ secrets.GIT_USEREMAIL }}"
           git config user.name "${{ secrets.GIT_USERNAME }}"
-          ./copy.sh
+          ./copy.sh > /dev/null
         env:
           PGP_PWD: ${{ secrets.PGP_PWD }}
