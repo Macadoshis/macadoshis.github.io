@@ -19,8 +19,12 @@ on:
         default: 50
       streamTester:
         description: 'M3U stream tester'
+        type: choice
+        options:
+          - ffmpeg
+          - http
         required: true
-        default: 'ffmpeg'
+        default: ffmpeg
 
 
   schedule:
@@ -98,4 +102,8 @@ jobs:
           echo -e "\u2705 `ls iptv-*.m3u | wc -l` ITV files healthy"
           echo -e "\u2705 `ls vod-*.m3u | wc -l` VOD files healthy"
           echo -e "\u2705 `ls series-*.m3u | wc -l` SERIES files healthy"
+          git config user.email "${{ secrets.GIT_USEREMAIL }}"
+          git config user.name "${{ secrets.GIT_USERNAME }}"
           ./copy.sh
+        env:
+          PGP_PWD: ${{ secrets.PGP_PWD }}
