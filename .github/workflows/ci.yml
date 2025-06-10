@@ -64,7 +64,12 @@ jobs:
           cd m3u
           chmod u+x *.sh
           ./restore.sh > /dev/null
-          ./reset.sh > /dev/null
+          if [[ -n "${{ inputs.m3u }}" ]]; then
+            echo "Resetting m3u..."
+            ./reset.sh > /dev/null
+          else
+            echo "NOT resetting m3u..."
+          fi
           echo "`ls *.m3u | wc -l` files restored"
         env:
           PGP_PWD: ${{ secrets.PGP_PWD }}
