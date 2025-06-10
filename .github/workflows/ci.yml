@@ -3,9 +3,10 @@ name: M3U tester
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
   workflow_dispatch:
+  schedule:
+    - cron: '30 22 * * *'  # Runs at 22:30 UTC
+    - cron: '0 7 * * *'    # Runs at 07:00 UTC
 
 jobs:
   m3u-tester:
@@ -67,7 +68,8 @@ jobs:
       - name: Run M3U tester
         run: |
           cd stalker-to-m3u
-          tools/./m3u-tester --m3uLocation="../m3u" --minSuccess=3 --maxFailures=50 --renamePrefix="_" --renameOnFailure="true" --threadsCount=10 --streamTester=ffmpeg
+          # do not output progression
+          tools/./m3u-tester --m3uLocation="../m3u" --minSuccess=3 --maxFailures=50 --renamePrefix="_" --renameOnFailure="true" --threadsCount=10 --streamTester=ffmpeg > /dev/null
       - name: Update M3U results
         run: |
           cd m3u
