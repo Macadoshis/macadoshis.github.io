@@ -112,7 +112,7 @@ jobs:
           cd stalker-to-m3u
           # do not output progression
           set +e
-          tools/./m3u-tester --m3uLocation="../m3u/${{ inputs.m3u }}" --minSuccess=${{ inputs.minSuccess || 3 }} --maxFailures=${{ inputs.maxFailures || 50 }} --renamePrefix="_" --renameOnFailure="true" --threadsCount=10 --streamTester=${{ inputs.streamTester || 'ffmpeg' }} > /dev/null
+          tools/./m3u-tester --m3uLocation="../m3u/${{ inputs.m3u }}" --minSuccess=${{ inputs.minSuccess || 3 }} --maxFailures=${{ inputs.maxFailures || 50 }} --renamePrefix="_" --renameOnFailure="true" --threadsCount=10 --streamTester=${{ inputs.streamTester || 'ffmpeg' }} > /dev/null 2>&1
           set -e
       - name: Update summary
         run: |
@@ -124,7 +124,7 @@ jobs:
           echo -e "| IPTV    | `ls _iptv-*.m3u | wc -l`   | `ls iptv-*.m3u | wc -l`   |" >> $GITHUB_STEP_SUMMARY
           echo -e "| VOD     | `ls _vod-*.m3u | wc -l`    | `ls vod-*.m3u | wc -l`    |" >> $GITHUB_STEP_SUMMARY
           echo -e "| SERIES  | `ls _series-*.m3u | wc -l` | `ls series-*.m3u | wc -l` |" >> $GITHUB_STEP_SUMMARY
-      - name: Update M3U results
+      - name: Push M3U results
         run: |
           cd m3u
           git config user.email "${{ secrets.GIT_USEREMAIL }}"
