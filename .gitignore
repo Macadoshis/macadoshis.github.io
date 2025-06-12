@@ -3,3 +3,4 @@
 node_modules/
 package-lock.json
 iptv/shenyu/dist/**/*.js
+iptv/telegram/my_session.session

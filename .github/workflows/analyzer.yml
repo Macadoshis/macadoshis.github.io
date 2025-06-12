@@ -1,0 +1,52 @@
+name: Analyzer
+
+on:
+  workflow_dispatch:
+    inputs:
+      m3u:
+        description: 'M3U file'
+        required: false
+        default: ''
+      minSuccess:
+        description: 'M3U tester min success'
+        required: true
+        default: 3
+      maxFailures:
+        description: 'M3U tester max failures'
+        required: true
+        default: 50
+      streamTester:
+        description: 'M3U stream tester'
+        type: choice
+        options:
+          - ffmpeg
+          - http
+        required: true
+        default: ffmpeg
+
+env:
+  FILE: './iptv/telegram/iptv.txt'
+
+jobs:
+  analyzer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitHub Repo
+        uses: actions/checkout@v4
+      - name: Restore telegram scripts
+        run: |
+          gpg --decrypt --batch --passphrase "${{ secrets.PGP_PWD }}" -o ./iptv/telegram/my_session.session ./iptv/telegram/my_session.session_enc
+
+          [[ -f ${{ env.FILE }} ]] && rm ${{ env.FILE }}
+          declare -a tge=("ariptvstalker" "StbEmucodesStalkerPortal" "+7eels9HzyOA4ZTBl")
+           for tg in "${tge[@]}";
+           do
+            echo "Read content of t.me/$tg"
+            python ./iptv/telegram/telegram-iptv-script.py t.me/$tg >> ${{ env.FILE }}
+           done
+        env:
+          BITBUCKET_USERNAME: ${{ secrets.BB_USERNAME }}
+          BITBUCKET_APP_PASSWORD: ${{ secrets.BB_TOKEN }}
+      - name: Clone stalker repo
+        run: |
+          git clone https://github.com/Macadoshis/stalker-to-m3u.git

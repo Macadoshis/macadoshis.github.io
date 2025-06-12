@@ -26,7 +26,6 @@ on:
         required: true
         default: ffmpeg
 
-
   schedule:
     - cron: '30 22 * * *'  # Runs at 22:30 UTC
     - cron: '0 7 * * *'    # Runs at 07:00 UTC
@@ -35,15 +34,6 @@ jobs:
   m3u-tester:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout GitHub Repo
-        uses: actions/checkout@v4
-      - name: Debug GitHub Secrets (safe)
-        run: |
-          echo "Username length: ${#BITBUCKET_USERNAME}"
-          echo "Password length: ${#BITBUCKET_APP_PASSWORD}"
-        env:
-          BITBUCKET_USERNAME: ${{ secrets.BB_USERNAME }}
-          BITBUCKET_APP_PASSWORD: ${{ secrets.BB_TOKEN }}
       - name: Clone source repo
         run: |
           git config --global credential.helper ""
