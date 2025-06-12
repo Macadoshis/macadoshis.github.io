@@ -12,6 +12,11 @@ args = parser.parse_args()
 channel_username = args.channel  # Get the channel from the command line
 # Connect to Telegram
 with TelegramClient('my_session', api_id, api_hash) as client:
+    client.connect()
+
+    if not client.is_user_authorized():
+        raise Exception("Session not valid or expired.")
+
     messages = client.get_messages(channel_username, limit=10000)  # Adjust limit as needed
     for message in reversed(messages):  # Read oldest first
         if message.text:
