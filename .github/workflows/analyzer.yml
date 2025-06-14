@@ -3,18 +3,21 @@ name: Analyzer
 on:
   workflow_dispatch:
     inputs:
-      m3u:
-        description: 'M3U file'
-        required: false
-        default: ''
-      minSuccess:
-        description: 'M3U tester min success'
+      groupsToTest:
+        description: 'Number of groups to test'
+        type: number
         required: true
-        default: 3
-      maxFailures:
-        description: 'M3U tester max failures'
+        default: 5
+      channelsToTest:
+        description: 'Number of channels to test'
+        type: number
         required: true
-        default: 50
+        default: 5
+      retestSuccess:
+        description: 'Retest succeeded.json'
+        type: boolean
+        required: true
+        default: false
       streamTester:
         description: 'M3U stream tester'
         type: choice
@@ -34,19 +37,76 @@ jobs:
       - name: Checkout GitHub Repo
         uses: actions/checkout@v4
       - name: Restore telegram scripts
+        if: ${{ false }}
         run: |
           gpg --decrypt --batch --passphrase "${{ secrets.PGP_PWD }}" -o ./iptv/telegram/my_session.session ./iptv/telegram/my_session.session_enc
-
+          
           [[ -f ${{ env.FILE }} ]] && rm ${{ env.FILE }}
+          pip install telethon
           declare -a tge=("ariptvstalker" "StbEmucodesStalkerPortal" "+7eels9HzyOA4ZTBl")
            for tg in "${tge[@]}";
            do
             echo "Read content of t.me/$tg"
             python ./iptv/telegram/telegram-iptv-script.py t.me/$tg >> ${{ env.FILE }}
            done
-        env:
-          BITBUCKET_USERNAME: ${{ secrets.BB_USERNAME }}
-          BITBUCKET_APP_PASSWORD: ${{ secrets.BB_TOKEN }}
+      - name: Restore sources
+        run: |
+          cd iptv
+          cat iptv.txt.zip.64 | base64 --decode > iptv.txt.zip
+          unzip -qo iptv.txt.zip
+          [[ -f iptv.txt ]]
       - name: Clone stalker repo
         run: |
           git clone https://github.com/Macadoshis/stalker-to-m3u.git
+          git clone https://gist.github.com/${{ secrets.GIST }}.git gist
+          
+          cat <<EOF > stalker-to-m3u/tools/sources.txt
+              ${{ secrets.SOURCES }}
+          EOF
+          cp gist/succeeded.json stalker-to-m3u/tools/succeeded.json
+      - name: Update summary
+        run: |
+          echo "## CURRENT content" >> $GITHUB_STEP_SUMMARY
+          echo -e "| succeeded.json |" >> $GITHUB_STEP_SUMMARY
+          echo -e "|----------------|" >> $GITHUB_STEP_SUMMARY
+          echo -e "| `jq 'length' ./stalker-to-m3u/tools/succeeded.json`   |" >> $GITHUB_STEP_SUMMARY
+      - name: Configure NODE
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ vars.NODE_VERSION }}
+      - name: Prepare stalker environment
+        run: |
+          cd stalker-to-m3u
+          node -v
+          npm -v
+          npm config set loglevel info
+          chmod u+x configure
+          chmod u+x tools/iptv-analyzer
+          ./configure
+          sudo add-apt-repository ppa:savoury1/ffmpeg4
+          sudo apt update
+          sudo apt install ffmpeg
+          rm -rf ffmpeg ffprobe
+          ln -s "$(which ffmpeg)" ./ffmpeg
+          ln -s "$(which ffprobe)" ./ffprobe
+          sudo fallocate -l 4G /swapfile
+          sudo chmod 600 /swapfile
+          sudo mkswap /swapfile
+          sudo swapon /swapfile
+          free -h
+      - name: Run analyzer
+        run: |
+          cd stalker-to-m3u
+          tools/./iptv-analyzer --cache="true" --groupsToTest=${{ inputs.groupsToTest || 5 }} --channelsToTest=${{ inputs.channelsToTest || 5 }} --retestSuccess=$${{ inputs.retestSuccess || false }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} > /dev/null 2>&1
+      - name: Update summary
+        run: |
+          echo "## RESULT content" >> $GITHUB_STEP_SUMMARY
+          echo -e "| succeeded.json |" >> $GITHUB_STEP_SUMMARY
+          echo -e "|----------------|" >> $GITHUB_STEP_SUMMARY
+          echo -e "| `jq 'length' ./stalker-to-m3u/tools/succeeded.json`   |" >> $GITHUB_STEP_SUMMARY
+      - name: Save succeeded.json
+        run: |
+          cp -ap ./stalker-to-m3u/tools/succeeded.json ./gist/
+          git add gist/succeeded.json
+          git commit -m "Update file"
+          git push
