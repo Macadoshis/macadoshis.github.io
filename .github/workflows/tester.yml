@@ -4,6 +4,11 @@ on:
   push:
     branches: [ main ]
   workflow_call:
+    inputs:
+      streamTester:
+        description: 'M3U stream tester'
+        type: string
+        required: true
   workflow_dispatch:
     inputs:
       m3u:
