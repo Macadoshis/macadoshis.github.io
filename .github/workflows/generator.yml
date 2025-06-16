@@ -108,6 +108,7 @@ jobs:
           PGP_PWD: ${{ secrets.PGP_PWD }}
 
   tester:
+    needs: [ generator ]
     uses: ./.github/workflows/tester.yml
     with:
       streamTester: ${{ inputs.streamTester }}

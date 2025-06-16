@@ -9,6 +9,18 @@ on:
         description: 'M3U stream tester'
         type: string
         required: true
+    secrets:
+      BB_USERNAME:
+        required: true
+      BB_TOKEN:
+        required: true
+      PGP_PWD:
+        required: true
+      GIT_USERNAME:
+        required: true
+      GIT_USEREMAIL:
+        required: true
+
   workflow_dispatch:
     inputs:
       m3u:
