@@ -71,7 +71,8 @@ jobs:
           npm config set loglevel info
           chmod u+x configure
           chmod u+x tools/iptv-generator
-          ./configure
+          # ./configure
+          npm install
           sudo add-apt-repository ppa:savoury1/ffmpeg4
           sudo apt update
           sudo apt install ffmpeg
@@ -84,7 +85,6 @@ jobs:
           sudo swapon /swapfile
           free -h
       - name: Run generator
-        if: ${{ false }}
         run: |
           cd stalker-to-m3u
           npm run iptv-generator ${{ inputs.generationKind }} -- --geminiAiKey=${{ secrets.geminiAiKey }} --geminiAiModel=${{ secrets.geminiAiModel }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }}
@@ -110,5 +110,11 @@ jobs:
   tester:
     needs: [ generator ]
     uses: ./.github/workflows/tester.yml
+    secrets:
+      BB_USERNAME: ${{ secrets.BB_USERNAME }}
+      BB_TOKEN: ${{ secrets.BB_TOKEN }}
+      PGP_PWD: ${{ secrets.PGP_PWD }}
+      GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
+      GIT_USEREMAIL: ${{ secrets.GIT_USEREMAIL }}
     with:
       streamTester: ${{ inputs.streamTester }}
