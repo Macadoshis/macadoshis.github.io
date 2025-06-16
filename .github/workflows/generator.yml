@@ -119,3 +119,8 @@ jobs:
       GIT_USEREMAIL: ${{ secrets.GIT_USEREMAIL }}
     with:
       streamTester: ${{ inputs.streamTester }}
+      BB_USERNAME: ${{ secrets.BB_USERNAME }}
+      BB_TOKEN: ${{ secrets.BB_TOKEN }}
+      PGP_PWD: ${{ secrets.PGP_PWD }}
+      GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
+      GIT_USEREMAIL: ${{ secrets.GIT_USEREMAIL }}
