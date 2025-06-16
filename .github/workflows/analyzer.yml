@@ -1,4 +1,4 @@
-name: Analyzer
+name: M3U analyzer
 
 on:
   workflow_dispatch:
@@ -26,6 +26,10 @@ on:
           - http
         required: true
         default: ffmpeg
+  schedule:
+    - cron: '0 22 * * *'  # Runs at 22:00 UTC
+    - cron: '0 14 * * *'    # Runs at 14:00 UTC
+    - cron: '0 6 * * *'    # Runs at 06:00 UTC
 
 env:
   FILE: './iptv/telegram/iptv.txt'
@@ -49,27 +53,22 @@ jobs:
             echo "Read content of t.me/$tg"
             python ./iptv/telegram/telegram-iptv-script.py t.me/$tg >> ${{ env.FILE }}
            done
-      - name: Restore sources
-        run: |
-          cd iptv
-          cat iptv.txt.zip.64 | base64 --decode > iptv.txt.zip
-          unzip -qo iptv.txt.zip
-          [[ -f iptv.txt ]]
-      - name: Clone stalker repo
+      - name: Clone repo and restore files
         run: |
           git clone https://github.com/Macadoshis/stalker-to-m3u.git
-          git clone https://gist.github.com/${{ secrets.GIST }}.git gist
+          git clone https://x-access-token:${{ secrets.GIST_TOKEN }}@gist.github.com/${{ secrets.GIST }}.git gist
           
-          cat <<EOF > stalker-to-m3u/tools/sources.txt
-              ${{ secrets.SOURCES }}
-          EOF
           cp gist/succeeded.json stalker-to-m3u/tools/succeeded.json
+          cp gist/failed.json stalker-to-m3u/tools/failed.json
+          cp gist/sources.txt stalker-to-m3u/tools/sources.txt
+          cp gist/iptv.txt stalker-to-m3u/
+          cp gist/iptv2.txt stalker-to-m3u/
       - name: Update summary
         run: |
           echo "## CURRENT content" >> $GITHUB_STEP_SUMMARY
-          echo -e "| succeeded.json |" >> $GITHUB_STEP_SUMMARY
-          echo -e "|----------------|" >> $GITHUB_STEP_SUMMARY
-          echo -e "| `jq 'length' ./stalker-to-m3u/tools/succeeded.json`   |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| succeeded.json | failed.json    |" >> $GITHUB_STEP_SUMMARY
+          echo -e "|----------------|----------------|" >> $GITHUB_STEP_SUMMARY
+          echo -e "| `jq 'length' ./stalker-to-m3u/tools/succeeded.json || echo 0`   | `jq 'length' ./stalker-to-m3u/tools/failed.json || echo 0`   |" >> $GITHUB_STEP_SUMMARY
       - name: Configure NODE
         uses: actions/setup-node@v4
         with:
@@ -97,16 +96,20 @@ jobs:
       - name: Run analyzer
         run: |
           cd stalker-to-m3u
-          tools/./iptv-analyzer --cache="true" --groupsToTest=${{ inputs.groupsToTest || 5 }} --channelsToTest=${{ inputs.channelsToTest || 5 }} --retestSuccess=$${{ inputs.retestSuccess || false }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} > /dev/null 2>&1
+          tools/./iptv-analyzer --cache="true" --groupsToTest=${{ inputs.groupsToTest || 5 }} --channelsToTest=${{ inputs.channelsToTest || 5 }} --retestSuccess=$${{ inputs.retestSuccess || false }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --threadsCount=5 > /dev/null 2>&1
       - name: Update summary
         run: |
           echo "## RESULT content" >> $GITHUB_STEP_SUMMARY
-          echo -e "| succeeded.json |" >> $GITHUB_STEP_SUMMARY
-          echo -e "|----------------|" >> $GITHUB_STEP_SUMMARY
-          echo -e "| `jq 'length' ./stalker-to-m3u/tools/succeeded.json`   |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| succeeded.json | failed.json    |" >> $GITHUB_STEP_SUMMARY
+          echo -e "|----------------|----------------|" >> $GITHUB_STEP_SUMMARY
+          echo -e "| `jq 'length' ./stalker-to-m3u/tools/succeeded.json || echo 0`   | `jq 'length' ./stalker-to-m3u/tools/failed.json || echo 0`   |" >> $GITHUB_STEP_SUMMARY
       - name: Save succeeded.json
         run: |
-          cp -ap ./stalker-to-m3u/tools/succeeded.json ./gist/
-          git add gist/succeeded.json
-          git commit -m "Update file"
-          git push
+          cd gist
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          cp -ap ../stalker-to-m3u/tools/succeeded.json ./
+          cp -ap ../stalker-to-m3u/tools/failed.json ./
+          git add succeeded.json failed.json
+          git commit -m "Update content (CI)"
+          git push || echo "Nothing to push"

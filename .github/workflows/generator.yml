@@ -1,0 +1,111 @@
+name: M3U generator
+
+on:
+  workflow_dispatch:
+    inputs:
+      generationKind:
+        description: 'What to generate'
+        type: choice
+        options:
+          - iptv
+          - vod
+          - series
+        required: true
+        default: iptv
+      streamTester:
+        description: 'M3U stream tester'
+        type: choice
+        options:
+          - ffmpeg
+          - http
+        required: true
+        default: ffmpeg
+
+jobs:
+  generator:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitHub Repo
+        uses: actions/checkout@v4
+      - name: Clone source repo
+        run: |
+          git config --global credential.helper ""
+          REPO_URL="https://bitbucket.org/SaadBenbouzid/m3u.git"
+          git clone https://${BITBUCKET_USERNAME}:${BITBUCKET_APP_PASSWORD}@${REPO_URL#https://}
+        env:
+          BITBUCKET_USERNAME: ${{ secrets.BB_USERNAME }}
+          BITBUCKET_APP_PASSWORD: ${{ secrets.BB_TOKEN }}
+      - name: Clone repo and restore files
+        run: |
+          git clone https://github.com/Macadoshis/stalker-to-m3u.git
+          git clone https://gist.github.com/${{ secrets.GIST }}.git gist
+          
+          cp gist/succeeded.json stalker-to-m3u/tools/succeeded.json
+      - name: Restore m3u files
+        run: |
+          cd m3u
+          chmod u+x *.sh
+          ./restore.sh > /dev/null
+          ./reset.sh > /dev/null
+          echo "`ls *.m3u | wc -l` files restored and reset"
+        env:
+          PGP_PWD: ${{ secrets.PGP_PWD }}
+      - name: Update summary
+        run: |
+          cd m3u
+          echo "## CURRENT content" >> $GITHUB_STEP_SUMMARY
+          echo -e "| Type    | \u274C #                   | \u2705 #                  |" >> $GITHUB_STEP_SUMMARY
+          echo -e "|---------|----------------------------|---------------------------|" >> $GITHUB_STEP_SUMMARY
+          echo -e "| IPTV    | `ls _iptv-*.m3u | wc -l`   | `ls iptv-*.m3u | wc -l`   |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| VOD     | `ls _vod-*.m3u | wc -l`    | `ls vod-*.m3u | wc -l`    |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| SERIES  | `ls _series-*.m3u | wc -l` | `ls series-*.m3u | wc -l` |" >> $GITHUB_STEP_SUMMARY
+      - name: Configure NODE
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ vars.NODE_VERSION }}
+      - name: Prepare stalker environment
+        run: |
+          cd stalker-to-m3u
+          node -v
+          npm -v
+          npm config set loglevel info
+          chmod u+x configure
+          chmod u+x tools/iptv-generator
+          ./configure
+          sudo add-apt-repository ppa:savoury1/ffmpeg4
+          sudo apt update
+          sudo apt install ffmpeg
+          rm -rf ffmpeg ffprobe
+          ln -s "$(which ffmpeg)" ./ffmpeg
+          ln -s "$(which ffprobe)" ./ffprobe
+          sudo fallocate -l 4G /swapfile
+          sudo chmod 600 /swapfile
+          sudo mkswap /swapfile
+          sudo swapon /swapfile
+          free -h
+      - name: Run generator
+        run: |
+          cd stalker-to-m3u
+          npm run iptv-generator ${{ inputs.generationKind }} -- --geminiAiKey=${{ secrets.geminiAiKey }} --geminiAiModel=${{ secrets.geminiAiModel }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }}
+      - name: Update summary
+        run: |
+          cd m3u
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## RESULT content" >> $GITHUB_STEP_SUMMARY
+          echo -e "| Type    | \u274C #                   | \u2705 #                  |" >> $GITHUB_STEP_SUMMARY
+          echo -e "|---------|----------------------------|---------------------------|" >> $GITHUB_STEP_SUMMARY
+          echo -e "| IPTV    | `ls _iptv-*.m3u | wc -l`   | `ls iptv-*.m3u | wc -l`   |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| VOD     | `ls _vod-*.m3u | wc -l`    | `ls vod-*.m3u | wc -l`    |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| SERIES  | `ls _series-*.m3u | wc -l` | `ls series-*.m3u | wc -l` |" >> $GITHUB_STEP_SUMMARY
+      - name: Test M3U
+        uses: ./.github/workflows/tester.yml
+        with:
+          streamTester: ${{ inputs.streamTester }}
+      - name: Push M3U results
+        run: |
+          cd m3u
+          git config user.email "${{ secrets.GIT_USEREMAIL }}"
+          git config user.name "${{ secrets.GIT_USERNAME }}"
+          ./copy.sh > /dev/null
+        env:
+          PGP_PWD: ${{ secrets.PGP_PWD }}
