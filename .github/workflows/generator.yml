@@ -84,6 +84,7 @@ jobs:
           sudo swapon /swapfile
           free -h
       - name: Run generator
+        if: ${{ false }}
         run: |
           cd stalker-to-m3u
           npm run iptv-generator ${{ inputs.generationKind }} -- --geminiAiKey=${{ secrets.geminiAiKey }} --geminiAiModel=${{ secrets.geminiAiModel }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }}
@@ -97,6 +98,10 @@ jobs:
           echo -e "| IPTV    | `ls iptv-*.m3u | wc -l || echo "0"`    |" >> $GITHUB_STEP_SUMMARY
           echo -e "| VOD     | `ls vod-*.m3u | wc -l || echo "0"`     |" >> $GITHUB_STEP_SUMMARY
           echo -e "| SERIES  | `ls series-*.m3u | wc -l || echo "0"`  |" >> $GITHUB_STEP_SUMMARY
+      - name: Test M3U (prev)
+        run: |
+          ls -lrth ./
+          ls -lrth ./.github/workflows/tester.yml
       - name: Test M3U
         uses: ./.github/workflows/tester.yml
         with:
