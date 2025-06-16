@@ -111,5 +111,5 @@ jobs:
           cp -ap ../stalker-to-m3u/tools/succeeded.json ./
           cp -ap ../stalker-to-m3u/tools/failed.json ./
           git add succeeded.json failed.json
-          git commit -m "Update content (CI)"
+          git commit -m "Update content (CI)" || echo "Nothing to commit"
           git push || echo "Nothing to push"

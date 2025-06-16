@@ -3,6 +3,7 @@ name: M3U tester
 on:
   push:
     branches: [ main ]
+  workflow_call:
   workflow_dispatch:
     inputs:
       m3u:
@@ -63,9 +64,9 @@ jobs:
           echo "## CURRENT content" >> $GITHUB_STEP_SUMMARY
           echo -e "| Type    | \u274C #                   | \u2705 #                  |" >> $GITHUB_STEP_SUMMARY
           echo -e "|---------|----------------------------|---------------------------|" >> $GITHUB_STEP_SUMMARY
-          echo -e "| IPTV    | `ls _iptv-*.m3u | wc -l`   | `ls iptv-*.m3u | wc -l`   |" >> $GITHUB_STEP_SUMMARY
-          echo -e "| VOD     | `ls _vod-*.m3u | wc -l`    | `ls vod-*.m3u | wc -l`    |" >> $GITHUB_STEP_SUMMARY
-          echo -e "| SERIES  | `ls _series-*.m3u | wc -l` | `ls series-*.m3u | wc -l` |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| IPTV    | `ls _iptv-*.m3u | wc -l || echo "0"`   | `ls iptv-*.m3u | wc -l || echo "0"`   |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| VOD     | `ls _vod-*.m3u | wc -l || echo "0"`    | `ls vod-*.m3u | wc -l || echo "0"`    |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| SERIES  | `ls _series-*.m3u | wc -l || echo "0"` | `ls series-*.m3u | wc -l || echo "0"` |" >> $GITHUB_STEP_SUMMARY
       - name: Prepare m3u files
         run: |
           cd m3u
@@ -109,9 +110,9 @@ jobs:
           echo "## RESULT content" >> $GITHUB_STEP_SUMMARY
           echo -e "| Type    | \u274C #                   | \u2705 #                  |" >> $GITHUB_STEP_SUMMARY
           echo -e "|---------|----------------------------|---------------------------|" >> $GITHUB_STEP_SUMMARY
-          echo -e "| IPTV    | `ls _iptv-*.m3u | wc -l`   | `ls iptv-*.m3u | wc -l`   |" >> $GITHUB_STEP_SUMMARY
-          echo -e "| VOD     | `ls _vod-*.m3u | wc -l`    | `ls vod-*.m3u | wc -l`    |" >> $GITHUB_STEP_SUMMARY
-          echo -e "| SERIES  | `ls _series-*.m3u | wc -l` | `ls series-*.m3u | wc -l` |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| IPTV    | `ls _iptv-*.m3u | wc -l || echo "0"`   | `ls iptv-*.m3u | wc -l || echo "0"`   |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| VOD     | `ls _vod-*.m3u | wc -l || echo "0"`    | `ls vod-*.m3u | wc -l || echo "0"`    |" >> $GITHUB_STEP_SUMMARY
+          echo -e "| SERIES  | `ls _series-*.m3u | wc -l || echo "0"` | `ls series-*.m3u | wc -l || echo "0"` |" >> $GITHUB_STEP_SUMMARY
       - name: Push M3U results
         run: |
           cd m3u
