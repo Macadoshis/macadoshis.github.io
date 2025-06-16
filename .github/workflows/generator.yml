@@ -85,6 +85,7 @@ jobs:
           sudo swapon /swapfile
           free -h
       - name: Run generator
+        if: ${{ false }}
         run: |
           cd stalker-to-m3u
           npm run iptv-generator ${{ inputs.generationKind }} -- --geminiAiKey=${{ secrets.geminiAiKey }} --geminiAiModel=${{ secrets.geminiAiModel }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }}
