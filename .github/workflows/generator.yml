@@ -71,7 +71,8 @@ jobs:
           npm config set loglevel info
           chmod u+x configure
           chmod u+x tools/iptv-generator
-          ./configure
+          # ./configure
+          npm install
           sudo add-apt-repository ppa:savoury1/ffmpeg4
           sudo apt update
           sudo apt install ffmpeg
@@ -97,10 +98,6 @@ jobs:
           echo -e "| IPTV    | `ls iptv-*.m3u | wc -l || echo "0"`    |" >> $GITHUB_STEP_SUMMARY
           echo -e "| VOD     | `ls vod-*.m3u | wc -l || echo "0"`     |" >> $GITHUB_STEP_SUMMARY
           echo -e "| SERIES  | `ls series-*.m3u | wc -l || echo "0"`  |" >> $GITHUB_STEP_SUMMARY
-      - name: Test M3U
-        uses: ./.github/workflows/tester.yml
-        with:
-          streamTester: ${{ inputs.streamTester }}
       - name: Push M3U results
         run: |
           cd m3u
@@ -109,3 +106,15 @@ jobs:
           ./copy.sh > /dev/null
         env:
           PGP_PWD: ${{ secrets.PGP_PWD }}
+
+  tester:
+    needs: [ generator ]
+    uses: ./.github/workflows/tester.yml
+    secrets:
+      BB_USERNAME: ${{ secrets.BB_USERNAME }}
+      BB_TOKEN: ${{ secrets.BB_TOKEN }}
+      PGP_PWD: ${{ secrets.PGP_PWD }}
+      GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
+      GIT_USEREMAIL: ${{ secrets.GIT_USEREMAIL }}
+    with:
+      streamTester: ${{ inputs.streamTester }}

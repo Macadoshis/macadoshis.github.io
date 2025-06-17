@@ -81,7 +81,8 @@ jobs:
           npm config set loglevel info
           chmod u+x configure
           chmod u+x tools/iptv-analyzer
-          ./configure
+          # ./configure
+          npm install
           sudo add-apt-repository ppa:savoury1/ffmpeg4
           sudo apt update
           sudo apt install ffmpeg
@@ -96,7 +97,7 @@ jobs:
       - name: Run analyzer
         run: |
           cd stalker-to-m3u
-          tools/./iptv-analyzer --cache="true" --groupsToTest=${{ inputs.groupsToTest || 5 }} --channelsToTest=${{ inputs.channelsToTest || 5 }} --retestSuccess=$${{ inputs.retestSuccess || false }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --threadsCount=5 > /dev/null 2>&1
+          tools/./iptv-analyzer --cache="true" --groupsToTest=${{ inputs.groupsToTest || 5 }} --channelsToTest=${{ inputs.channelsToTest || 5 }} --retestSuccess=${{ inputs.retestSuccess || false }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --threadsCount=5 > /dev/null 2>&1
       - name: Update summary
         run: |
           echo "## RESULT content" >> $GITHUB_STEP_SUMMARY

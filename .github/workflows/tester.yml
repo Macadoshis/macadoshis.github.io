@@ -4,6 +4,23 @@ on:
   push:
     branches: [ main ]
   workflow_call:
+    inputs:
+      streamTester:
+        description: 'M3U stream tester'
+        type: string
+        required: true
+    secrets:
+      BB_USERNAME:
+        required: true
+      BB_TOKEN:
+        required: true
+      PGP_PWD:
+        required: true
+      GIT_USERNAME:
+        required: true
+      GIT_USEREMAIL:
+        required: true
+
   workflow_dispatch:
     inputs:
       m3u:
@@ -86,7 +103,8 @@ jobs:
           npm config set loglevel info
           chmod u+x configure
           chmod u+x tools/m3u-tester
-          ./configure
+          # ./configure
+          npm install
           sudo add-apt-repository ppa:savoury1/ffmpeg4
           sudo apt update
           sudo apt install ffmpeg
