@@ -51,6 +51,7 @@ jobs:
           git clone https://gist.github.com/${{ secrets.GIST }}.git gist
           
           cp gist/succeeded.json stalker-to-m3u/tools/succeeded.json
+          cp gist/generator-config.json stalker-to-m3u/tools/generator-config.json
       - name: Restore m3u files
         run: |
           cd m3u
