@@ -26,7 +26,7 @@ on:
         description: 'Max entries to generate from succeeded.json.'
         type: number
         required: true
-        default: 10
+        default: 3
       streamTester:
         description: 'M3U stream tester'
         type: choice
@@ -39,6 +39,9 @@ on:
 concurrency:
   group: generator-queue
   cancel-in-progress: false
+
+  schedule:
+    - cron: '0 4 * * *'    # Runs at 04:00 UTC
 
 jobs:
   generator:
