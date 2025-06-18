@@ -12,6 +12,21 @@ on:
           - series
         required: true
         default: iptv
+      vodMaxPagePerGenre:
+        description: 'Max number of pages per category to fetch the videos from'
+        type: number
+        required: true
+        default: 50
+      maxNumberOfChannelsToTest:
+        description: 'Max number of channels to test'
+        type: number
+        required: true
+        default: 5
+      maxOutputs:
+        description: 'Max entries to generate from succeeded.json.'
+        type: number
+        required: true
+        default: 10
       streamTester:
         description: 'M3U stream tester'
         type: choice
@@ -20,6 +35,10 @@ on:
           - http
         required: true
         default: ffmpeg
+
+concurrency:
+  group: generator-queue
+  cancel-in-progress: false
 
 jobs:
   generator:
@@ -41,6 +60,7 @@ jobs:
           git clone https://gist.github.com/${{ secrets.GIST }}.git gist
           
           cp gist/succeeded.json stalker-to-m3u/tools/succeeded.json
+          cp gist/generator-config.json stalker-to-m3u/tools/generator-config.json
       - name: Restore m3u files
         run: |
           cd m3u
@@ -75,7 +95,7 @@ jobs:
           npm install
           sudo add-apt-repository ppa:savoury1/ffmpeg4
           sudo apt update
-          sudo apt install ffmpeg
+          sudo apt install ffmpeg moreutils
           rm -rf ffmpeg ffprobe
           ln -s "$(which ffmpeg)" ./ffmpeg
           ln -s "$(which ffprobe)" ./ffprobe
@@ -87,7 +107,9 @@ jobs:
       - name: Run generator
         run: |
           cd stalker-to-m3u
-          npm run iptv-generator ${{ inputs.generationKind }} -- --geminiAiKey=${{ secrets.geminiAiKey }} --geminiAiModel=${{ secrets.geminiAiModel }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }}
+          jq '.vodMaxPagePerGenre = ${{ inputs.vodMaxPagePerGenre || 50 }}' config.json | sponge config.json
+          jq '.maxNumberOfChannelsToTest = ${{ inputs.maxNumberOfChannelsToTest || 5 }}' config.json | sponge config.json
+          npm run iptv-generator ${{ inputs.generationKind }} -- --geminiAiKey=${{ secrets.geminiAiKey }} --geminiAiModel=${{ secrets.geminiAiModel }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --maxOutputs=${{ inputs.maxOutputs }} --outputDir=../m3u
       - name: Update summary
         run: |
           cd m3u

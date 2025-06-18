@@ -34,6 +34,10 @@ on:
 env:
   FILE: './iptv/telegram/iptv.txt'
 
+concurrency:
+  group: analyzer-queue
+  cancel-in-progress: false
+
 jobs:
   analyzer:
     runs-on: ubuntu-latest
