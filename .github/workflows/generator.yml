@@ -26,7 +26,7 @@ on:
         description: 'Max entries to generate from succeeded.json.'
         type: number
         required: true
-        default: 10
+        default: 3
       streamTester:
         description: 'M3U stream tester'
         type: choice
@@ -35,6 +35,9 @@ on:
           - http
         required: true
         default: ffmpeg
+
+  schedule:
+    - cron: '0 4 * * *'    # Runs at 04:00 UTC
 
 concurrency:
   group: generator-queue
@@ -109,7 +112,7 @@ jobs:
           cd stalker-to-m3u
           jq '.vodMaxPagePerGenre = ${{ inputs.vodMaxPagePerGenre || 50 }}' config.json | sponge config.json
           jq '.maxNumberOfChannelsToTest = ${{ inputs.maxNumberOfChannelsToTest || 5 }}' config.json | sponge config.json
-          npm run iptv-generator ${{ inputs.generationKind }} -- --geminiAiKey=${{ secrets.geminiAiKey }} --geminiAiModel=${{ secrets.geminiAiModel }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --maxOutputs=${{ inputs.maxOutputs }} --outputDir=../m3u
+          npm run iptv-generator ${{ inputs.generationKind || 'iptv' }} -- --geminiAiKey=${{ secrets.geminiAiKey }} --geminiAiModel=${{ secrets.geminiAiModel }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --maxOutputs=${{ inputs.maxOutputs || 3 }} --outputDir=../m3u
       - name: Update summary
         run: |
           cd m3u
