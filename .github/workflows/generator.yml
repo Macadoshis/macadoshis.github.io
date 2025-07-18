@@ -82,6 +82,10 @@ jobs:
           echo -e "| IPTV    | `ls iptv-*.m3u | wc -l || echo "0"`    |" >> $GITHUB_STEP_SUMMARY
           echo -e "| VOD     | `ls vod-*.m3u | wc -l || echo "0"`     |" >> $GITHUB_STEP_SUMMARY
           echo -e "| SERIES  | `ls series-*.m3u | wc -l || echo "0"`  |" >> $GITHUB_STEP_SUMMARY
+      - name: Reset m3u files
+        run: |
+          cd m3u
+          ./reset.sh > /dev/null
       - name: Configure NODE
         uses: actions/setup-node@v4
         with:
