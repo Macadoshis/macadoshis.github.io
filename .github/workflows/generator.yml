@@ -26,7 +26,7 @@ on:
         description: 'Max entries to generate from succeeded.json.'
         type: number
         required: true
-        default: 3
+        default: 1
       streamTester:
         description: 'M3U stream tester'
         type: choice
@@ -37,7 +37,7 @@ on:
         default: ffmpeg
 
   schedule:
-    - cron: '0 4 * * *'    # Runs at 04:00 UTC
+    - cron: '0 4 1-31/3 * *'    # Runs at 04:00 UTC every 3 days of the month
 
 concurrency:
   group: generator-queue
