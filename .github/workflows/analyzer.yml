@@ -18,6 +18,11 @@ on:
         type: boolean
         required: true
         default: false
+      threadsCount:
+        description: 'Threads'
+        type: number
+        required: true
+        default: 5
       streamTester:
         description: 'M3U stream tester'
         type: choice
@@ -101,7 +106,7 @@ jobs:
       - name: Run analyzer
         run: |
           cd stalker-to-m3u
-          tools/./iptv-analyzer --cache="true" --groupsToTest=${{ inputs.groupsToTest || 5 }} --channelsToTest=${{ inputs.channelsToTest || 5 }} --retestSuccess=${{ inputs.retestSuccess || false }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --threadsCount=5
+          tools/./iptv-analyzer --cache="true" --groupsToTest=${{ inputs.groupsToTest || 5 }} --channelsToTest=${{ inputs.channelsToTest || 5 }} --retestSuccess=${{ inputs.retestSuccess || false }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --threadsCount=${{ inputs.threadsCount || 5 }}
       - name: Update summary
         run: |
           echo "## RESULT content" >> $GITHUB_STEP_SUMMARY
