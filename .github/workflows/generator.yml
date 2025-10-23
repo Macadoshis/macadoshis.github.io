@@ -1,4 +1,5 @@
 name: M3U generator
+run-name: M3U generator ${{ inputs.generationKind || 'iptv' }} (${{ inputs.maxOutputs || 1 }})
 
 on:
   workflow_dispatch:

@@ -1,4 +1,5 @@
 name: M3U tester
+run-name: M3U tester (${{ inputs.streamTester || 'ffmpeg' }})
 
 on:
   push:

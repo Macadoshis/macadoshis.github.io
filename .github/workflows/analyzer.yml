@@ -1,4 +1,5 @@
 name: M3U analyzer
+run-name: M3U analyzer (${{ inputs.streamTester || 'ffmpeg' }})
 
 on:
   workflow_dispatch:
