@@ -72,7 +72,6 @@ jobs:
           cp gist/failed.json stalker-to-m3u/tools/failed.json
           cp gist/sources.txt stalker-to-m3u/tools/sources.txt
           cp gist/iptv.txt stalker-to-m3u/
-          cp gist/iptv2.txt stalker-to-m3u/
       - name: Update summary
         run: |
           echo "## CURRENT content" >> $GITHUB_STEP_SUMMARY
