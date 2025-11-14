@@ -37,8 +37,8 @@ on:
         required: true
         default: ffmpeg
 
-  schedule:
-    - cron: '0 4 1-31/3 * *'    # Runs at 04:00 UTC every 3 days of the month
+#  schedule:
+#    - cron: '0 4 1-31/3 * *'    # Runs at 04:00 UTC every 3 days of the month
 
 concurrency:
   group: generator-queue
@@ -158,3 +158,4 @@ jobs:
       GIT_USEREMAIL: ${{ secrets.GIT_USEREMAIL }}
     with:
       streamTester: ${{ inputs.streamTester }}
+
