@@ -33,8 +33,6 @@ on:
         required: true
         default: ffmpeg
   schedule:
-    - cron: '0 22 * * *'  # Runs at 22:00 UTC
-    - cron: '0 14 * * *'    # Runs at 14:00 UTC
     - cron: '0 6 * * *'    # Runs at 06:00 UTC
 
 env:
@@ -122,4 +120,5 @@ jobs:
           cp -ap ../stalker-to-m3u/tools/failed.json ./
           git add succeeded.json failed.json
           git commit -m "Update content (CI)" || echo "Nothing to commit"
+
           git push || echo "Nothing to push"
