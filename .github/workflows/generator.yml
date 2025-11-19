@@ -114,7 +114,7 @@ jobs:
           # ./configure
           npm install
           sudo add-apt-repository ppa:savoury1/ffmpeg4
-          sudo apt update
+          # sudo apt update
           sudo apt install ffmpeg moreutils
           rm -rf ffmpeg ffprobe
           ln -s "$(which ffmpeg)" ./ffmpeg
