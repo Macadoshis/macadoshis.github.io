@@ -87,6 +87,7 @@ jobs:
           echo -e "| VOD     | `ls vod-*.m3u | wc -l || echo "0"`     |" >> $GITHUB_STEP_SUMMARY
           echo -e "| SERIES  | `ls series-*.m3u | wc -l || echo "0"`  |" >> $GITHUB_STEP_SUMMARY
       - name: Reset m3u files
+        if: ${{ !inputs.host || inputs.host == '' || inputs.host == null }}
         run: |
           cd m3u
           ./reset.sh > /dev/null
