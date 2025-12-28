@@ -155,6 +155,7 @@ jobs:
 
   tester:
     needs: [ generator ]
+    if: ${{ !inputs.host || inputs.host == '' || inputs.host == null }}
     uses: ./.github/workflows/tester.yml
     secrets:
       BB_USERNAME: ${{ secrets.BB_USERNAME }}
