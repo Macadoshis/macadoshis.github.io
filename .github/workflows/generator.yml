@@ -131,6 +131,7 @@ jobs:
           jq '.vodMaxPagePerGenre = ${{ inputs.vodMaxPagePerGenre || 50 }}' config.json | sponge config.json
           jq '.vodOrdering = "rating"' config.json | sponge config.json
           jq '.tvgIdPreFill = true' config.json | sponge config.json
+          jq '.seriesResolveTitle = true' config.json | sponge config.json
           jq '.maxNumberOfChannelsToTest = ${{ inputs.maxNumberOfChannelsToTest || 5 }}' config.json | sponge config.json
           npm run iptv-generator ${{ inputs.generationKind || 'iptv' }} -- --geminiAiKey=${{ secrets.geminiAiKey }} --geminiAiModel=${{ secrets.geminiAiModel }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --maxOutputs=${{ inputs.maxOutputs || 3 }} --shuffle=true --outputDir=../m3u --host=${{ inputs.host }}
       - name: Update summary
