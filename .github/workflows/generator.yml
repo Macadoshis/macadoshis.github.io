@@ -74,7 +74,7 @@ jobs:
           cd m3u
           chmod u+x *.sh
           ./restore.sh > /dev/null
-          echo "`ls *.m3u | wc -l` files restored and reset"
+          echo "`ls *.m3u | wc -l` files restored"
         env:
           PGP_PWD: ${{ secrets.PGP_PWD }}
       - name: Update summary
