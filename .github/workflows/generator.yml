@@ -90,7 +90,7 @@ jobs:
         if: ${{ !inputs.host || inputs.host == '' || inputs.host == null }}
         run: |
           cd m3u
-          ./reset.sh > /dev/null
+          ./reset.sh "${{ inputs.generationKind || 'iptv' }}" > /dev/null
       - name: Update summary
         run: |
           cd m3u
