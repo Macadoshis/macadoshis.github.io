@@ -32,6 +32,10 @@ on:
         description: 'Host to replay'
         type: string
         required: false
+      mac:
+        description: 'MAC to replay'
+        type: string
+        required: false
       streamTester:
         description: 'M3U stream tester'
         type: choice
@@ -133,7 +137,7 @@ jobs:
           jq '.tvgIdPreFill = true' config.json | sponge config.json
           jq '.seriesResolveTitle = true' config.json | sponge config.json
           jq '.maxNumberOfChannelsToTest = ${{ inputs.maxNumberOfChannelsToTest || 5 }}' config.json | sponge config.json
-          npm run iptv-generator ${{ inputs.generationKind || 'iptv' }} -- --geminiAiKey=${{ secrets.geminiAiKey }} --geminiAiModel=${{ secrets.geminiAiModel }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --maxOutputs=${{ inputs.maxOutputs || 3 }} --shuffle=true --outputDir=../m3u --host=${{ inputs.host }}
+          npm run iptv-generator ${{ inputs.generationKind || 'iptv' }} -- --geminiAiKey=${{ secrets.geminiAiKey }} --geminiAiModel=${{ secrets.geminiAiModel }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --maxOutputs=${{ inputs.maxOutputs || 3 }} --shuffle=true --outputDir=../m3u --host=${{ inputs.host }} --mac=${{ inputs.mac }}
       - name: Update summary
         run: |
           cd m3u
