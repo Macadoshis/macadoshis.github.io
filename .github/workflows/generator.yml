@@ -124,11 +124,11 @@ jobs:
           rm -rf ffmpeg ffprobe
           ln -s "$(which ffmpeg)" ./ffmpeg
           ln -s "$(which ffprobe)" ./ffprobe
-          sudo fallocate -l 4G /swapfile
-          sudo chmod 600 /swapfile
-          sudo mkswap /swapfile
-          sudo swapon /swapfile
-          free -h
+          # sudo fallocate -l 4G /swapfile
+          # sudo chmod 600 /swapfile
+          # sudo mkswap /swapfile
+          # sudo swapon /swapfile
+          # free -h
       - name: Run generator
         run: |
           cd stalker-to-m3u
@@ -169,4 +169,5 @@ jobs:
       GIT_USEREMAIL: ${{ secrets.GIT_USEREMAIL }}
     with:
       streamTester: ${{ inputs.streamTester }}
+
 
