@@ -117,11 +117,11 @@ jobs:
           rm -rf ffmpeg ffprobe
           ln -s "$(which ffmpeg)" ./ffmpeg
           ln -s "$(which ffprobe)" ./ffprobe
-          sudo fallocate -l 4G /swapfile
-          sudo chmod 600 /swapfile
-          sudo mkswap /swapfile
-          sudo swapon /swapfile
-          free -h
+          # sudo fallocate -l 4G /swapfile
+          # sudo chmod 600 /swapfile
+          # sudo mkswap /swapfile
+          # sudo swapon /swapfile
+          # free -h
       - name: Run M3U tester
         run: |
           cd stalker-to-m3u
@@ -145,3 +145,4 @@ jobs:
           ./copy.sh > /dev/null
         env:
           PGP_PWD: ${{ secrets.PGP_PWD }}
+
