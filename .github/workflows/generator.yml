@@ -66,13 +66,24 @@ jobs:
         env:
           BITBUCKET_USERNAME: ${{ secrets.BB_USERNAME }}
           BITBUCKET_APP_PASSWORD: ${{ secrets.BB_TOKEN }}
+      - name: Download dropbox files
+        uses: gomes042/gh-actions-dropbox/files/download_zip@60f2d1f429591142b2ed6c2a22fe620b611de460
+        with:
+          DROPBOX_APP_KEY: ${{ secrets.DROPBOX_APP_KEY }}
+          DROPBOX_APP_SECRET: ${{ secrets.DROPBOX_APP_SECRET }}
+          DROPBOX_REFRESH_TOKEN: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
+          SOURCE_PATH: /files
+          DEST_PATH: ./dropbox.zip
+      - name: Unzip dropbox files
+        run: |
+          unzip -q dropbox.zip -d dropbox
+          ls -lrth dropbox/files
       - name: Clone repo and restore files
         run: |
           git clone https://github.com/Macadoshis/stalker-to-m3u.git
-          git clone https://gist.github.com/${{ secrets.GIST }}.git gist
           
-          cp gist/succeeded.json stalker-to-m3u/tools/succeeded.json
-          cp gist/generator-config.json stalker-to-m3u/tools/generator-config.json
+          cp dropbox/files/succeeded.json stalker-to-m3u/tools/succeeded.json
+          cp dropbox/files/generator-config.json stalker-to-m3u/tools/generator-config.json
       - name: Restore m3u files
         run: |
           cd m3u
