@@ -35,8 +35,8 @@ on:
   schedule:
     - cron: '0 6 * * *'    # Runs at 06:00 UTC
 
-env:
-  FILE: './iptv/telegram/iptv.txt'
+#env:
+#  FILE: './iptv/telegram/iptv.txt'
 
 concurrency:
   group: analyzer-queue
@@ -81,6 +81,7 @@ jobs:
           cp dropbox/files/failed.json stalker-to-m3u/tools/
           cp dropbox/files/sources.txt stalker-to-m3u/tools/
           cp dropbox/files/iptv.txt stalker-to-m3u/
+          cp dropbox/files/links.txt ./
       - name: Update summary
         run: |
           echo "## CURRENT content" >> $GITHUB_STEP_SUMMARY
@@ -138,4 +139,21 @@ jobs:
           DROPBOX_REFRESH_TOKEN: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
           SOURCE_PATH: ./stalker-to-m3u/tools/failed.json
           DEST_PATH: /files/failed.json
-
+      - name: Verify links
+        run: |
+          echo "## LINKS verification" >> $GITHUB_STEP_SUMMARY
+          if [[ ! -f ./links.txt ]]; then
+            echo -e "️\u26A0 links.txt not found"
+            exit 0
+          fi
+          
+          while IFS= read -r link || [[ -n "$link" ]]; do
+            link=$(echo "$link" | tr -d '\r')
+            [[ -z "$link" ]] && continue
+            response=$(curl -sL -o /dev/null -w "%{http_code}" "$link" 2>&1)
+            if [ "$response" -eq 200 ]; then
+              echo -e "\u2705 $link - OK" >> $GITHUB_STEP_SUMMARY
+            else
+              echo -e "\u274C $link - HTTP $response"
+            fi
+          done < ./links.txt
