@@ -19,6 +19,11 @@ on:
         type: boolean
         required: true
         default: false
+      retestFailed:
+        description: 'Retest failed.json'
+        type: boolean
+        required: true
+        default: false
       threadsCount:
         description: 'Threads'
         type: number
@@ -116,7 +121,7 @@ jobs:
       - name: Run analyzer
         run: |
           cd stalker-to-m3u
-          tools/./iptv-analyzer --cache="true" --groupsToTest=${{ inputs.groupsToTest || 5 }} --channelsToTest=${{ inputs.channelsToTest || 5 }} --retestSuccess=${{ inputs.retestSuccess || false }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --threadsCount=${{ inputs.threadsCount || 5 }} > /dev/null 2>&1
+          tools/./iptv-analyzer --cache="true" --groupsToTest=${{ inputs.groupsToTest || 5 }} --channelsToTest=${{ inputs.channelsToTest || 5 }} --retestSuccess=${{ inputs.retestSuccess || false }} --retestFailed=${{ inputs.retestFailed || false }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --threadsCount=${{ inputs.threadsCount || 5 }} > /dev/null 2>&1
       - name: Update summary
         run: |
           echo "## RESULT content" >> $GITHUB_STEP_SUMMARY
