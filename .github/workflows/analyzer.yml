@@ -8,12 +8,12 @@ on:
         description: 'Number of groups to test'
         type: number
         required: true
-        default: 5
+        default: 3
       channelsToTest:
         description: 'Number of channels to test'
         type: number
         required: true
-        default: 5
+        default: 3
       retestSuccess:
         description: 'Retest succeeded.json'
         type: boolean
@@ -28,7 +28,7 @@ on:
         description: 'Threads'
         type: number
         required: true
-        default: 5
+        default: 15
       streamTester:
         description: 'M3U stream tester'
         type: choice
@@ -121,7 +121,7 @@ jobs:
       - name: Run analyzer
         run: |
           cd stalker-to-m3u
-          tools/./iptv-analyzer --cache="true" --groupsToTest=${{ inputs.groupsToTest || 5 }} --channelsToTest=${{ inputs.channelsToTest || 5 }} --retestSuccess=${{ inputs.retestSuccess || false }} --retestFailed=${{ inputs.retestFailed || false }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --threadsCount=${{ inputs.threadsCount || 5 }} > /dev/null 2>&1
+          tools/./iptv-analyzer --cache="true" --groupsToTest=${{ inputs.groupsToTest || 3 }} --channelsToTest=${{ inputs.channelsToTest || 3 }} --retestSuccess=${{ inputs.retestSuccess || false }} --retestFailed=${{ inputs.retestFailed || false }} --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --threadsCount=${{ inputs.threadsCount || 15 }} > /dev/null 2>&1
       - name: Update summary
         run: |
           echo "## RESULT content" >> $GITHUB_STEP_SUMMARY
@@ -162,3 +162,4 @@ jobs:
               echo -e "\u274C $link - HTTP $response"
             fi
           done < ./links.txt
+
