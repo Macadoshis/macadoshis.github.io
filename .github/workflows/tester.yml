@@ -55,7 +55,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  m3u-tester-prepare:
+  m3u-tester:
     runs-on: ubuntu-latest
     steps:
       - name: Clone source repo
@@ -100,69 +100,33 @@ jobs:
             echo "NOT resetting m3u..."
             mv "_${{ inputs.m3u }}" ${{ inputs.m3u }} && echo "${{ inputs.m3u }} has been reset" || echo "No _${{ inputs.m3u }} to reset"
           fi
-      - name: Upload M3U files
-        uses: actions/upload-artifact@v4
-        with:
-          name: tester-m3u-${{ github.run_id }}
-          path: m3u/*.m3u
-          if-no-files-found: warn
-          
-  m3u-tester:
-    runs-on: windows-latest
-    needs: m3u-tester-prepare
-    steps:
-      - name: Clone stalker repo
-        run: |
-          git clone https://github.com/Macadoshis/stalker-to-m3u.git
-      - name: Configure NODE
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ vars.NODE_VERSION }}
-      - name: Upgrade npm to latest
-        run: npm install -g npm@^10.0.0 && npm -v
-      - name: Download M3U files
-        uses: actions/download-artifact@v4
-        with:
-          name: tester-m3u-${{ github.run_id }}
-          path: m3u
-      - name: Install (powershell)
-        shell: pwsh
+
+      - name: Prepare stalker environment
         run: |
           cd stalker-to-m3u
           node -v
           npm -v
           npm config set loglevel info
-          ./configure.bat
-
+          chmod u+x configure
+          chmod u+x tools/m3u-tester
+          # ./configure
+          npm install
+          sudo add-apt-repository ppa:savoury1/ffmpeg4
+          # sudo apt update
+          sudo apt install ffmpeg
+          rm -rf ffmpeg ffprobe
+          ln -s "$(which ffmpeg)" ./ffmpeg
+          ln -s "$(which ffprobe)" ./ffprobe
+          # sudo fallocate -l 4G /swapfile
+          # sudo chmod 600 /swapfile
+          # sudo mkswap /swapfile
+          # sudo swapon /swapfile
+          # free -h
       - name: Run M3U tester
         run: |
           cd stalker-to-m3u
           # do not output progression
-          tools/./m3u-tester --m3uLocation="../m3u/${{ inputs.m3u }}" --minSuccess=${{ inputs.minSuccess || 30 }} --maxFailures=${{ inputs.maxFailures || 60 }} --renamePrefix="_" --renameOnFailure="true" --threadsCount=5 --streamTester=${{ inputs.streamTester || 'ffmpeg' }}
-      - name: Upload M3U files
-        uses: actions/upload-artifact@v4
-        with:
-          name: tester-m3u-to-push-${{ github.run_id }}
-          path: m3u/*.m3u
-          if-no-files-found: warn
-
-  m3u-tester-push:
-    runs-on: ubuntu-latest
-    needs: m3u-tester
-    steps:
-      - name: Clone source repo
-        run: |
-          git config --global credential.helper ""
-          REPO_URL="https://bitbucket.org/SaadBenbouzid/m3u.git"
-          git clone https://${BITBUCKET_USERNAME}:${BITBUCKET_APP_PASSWORD}@${REPO_URL#https://}
-        env:
-          BITBUCKET_USERNAME: ${{ secrets.BB_USERNAME }}
-          BITBUCKET_APP_PASSWORD: ${{ secrets.BB_TOKEN }}
-      - name: Download M3U files
-        uses: actions/download-artifact@v4
-        with:
-          name: tester-m3u-to-push-${{ github.run_id }}
-          path: m3u
+          tools/./m3u-tester --m3uLocation="../m3u/${{ inputs.m3u }}" --minSuccess=${{ inputs.minSuccess || 30 }} --maxFailures=${{ inputs.maxFailures || 60 }} --renamePrefix="_" --renameOnFailure="true" --threadsCount=10 --streamTester=${{ inputs.streamTester || 'ffmpeg' }} > /dev/null 2>&1
       - name: Update summary
         run: |
           cd m3u
