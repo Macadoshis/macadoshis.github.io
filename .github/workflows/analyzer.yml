@@ -37,8 +37,8 @@ on:
           - http
         required: true
         default: ffmpeg
-  # schedule:
-  #   - cron: '0 6 * * *'    # Runs at 06:00 UTC
+  schedule:
+    - cron: '0 6 * * *'    # Runs at 06:00 UTC
 
 #env:
 #  FILE: './iptv/telegram/iptv.txt'
