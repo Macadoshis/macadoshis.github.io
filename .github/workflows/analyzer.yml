@@ -49,6 +49,8 @@ concurrency:
 
 jobs:
   analyzer:
+    permissions:
+      contents: read
     runs-on: ubuntu-latest
     steps:
       - name: Checkout GitHub Repo
@@ -80,7 +82,7 @@ jobs:
           ls -lrth dropbox/files
       - name: Clone repo and restore files
         run: |
-          git clone https://github.com/Macadoshis/stalker-to-m3u.git
+          git clone https://x-access-token:${{ secrets.STALKER_REPO_PAT }}@github.com/Macadoshis/stalker-to-m3u.git
           
           cp dropbox/files/succeeded.json stalker-to-m3u/tools/
           cp dropbox/files/failed.json stalker-to-m3u/tools/
