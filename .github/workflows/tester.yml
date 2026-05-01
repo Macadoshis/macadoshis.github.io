@@ -111,7 +111,7 @@ jobs:
           chmod u+x tools/m3u-tester
           # ./configure
           npm install
-          sudo add-apt-repository ppa:savoury1/ffmpeg4
+          # sudo add-apt-repository ppa:savoury1/ffmpeg4
           # sudo apt update
           sudo apt install ffmpeg
           rm -rf ffmpeg ffprobe
