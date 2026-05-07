@@ -180,7 +180,6 @@ jobs:
       PGP_PWD: ${{ secrets.PGP_PWD }}
       GIT_USERNAME: ${{ secrets.GIT_USERNAME }}
       GIT_USEREMAIL: ${{ secrets.GIT_USEREMAIL }}
+      STALKER_REPO_PAT: ${{ secrets.STALKER_REPO_PAT }}
     with:
       streamTester: ${{ inputs.streamTester }}
-
-

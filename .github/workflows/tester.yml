@@ -21,6 +21,8 @@ on:
         required: true
       GIT_USEREMAIL:
         required: true
+      STALKER_REPO_PAT:
+        required: true
 
   workflow_dispatch:
     inputs:
