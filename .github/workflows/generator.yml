@@ -184,3 +184,4 @@ jobs:
       SOURCE_REPO: ${{ secrets.SOURCE_REPO }}
     with:
       streamTester: ${{ inputs.streamTester }}
+      m3u: '${{inputs.generationKind}}-*'

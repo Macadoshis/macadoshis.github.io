@@ -8,6 +8,11 @@ on:
         description: 'M3U stream tester'
         type: string
         required: true
+      m3u:
+        description: 'M3U file'
+        type: string
+        required: false
+        default: ''
     secrets:
       BB_USERNAME:
         required: true
@@ -100,9 +105,16 @@ jobs:
           if [[ -z "${{ inputs.m3u }}" ]]; then
             echo "Resetting m3u..."
             ./reset.sh > /dev/null
-          else
+          elif [[ "${{ inputs.m3u }}" == *.m3u ]]; then
             echo "NOT resetting m3u..."
             mv "_${{ inputs.m3u }}" ${{ inputs.m3u }} && echo "${{ inputs.m3u }} has been reset" || echo "No _${{ inputs.m3u }} to reset"
+          elif [[ "${{ inputs.m3u }}" == *"-*"* ]]; then
+            generatorKind="${{ inputs.m3u }}"
+            generatorKind="${generatorKind%%-*}"
+            echo "M3U pattern detected, resetting by generator kind: ${generatorKind}"
+            ./reset.sh "${generatorKind}" > /dev/null
+          else
+            echo "Ignoring reset..."
           fi
 
       - name: Prepare environment
