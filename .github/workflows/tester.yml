@@ -53,9 +53,9 @@ on:
         default: ffmpeg
 
   schedule:
-    - cron: '30 22 * * *'  # Runs at 22:30 UTC
-    - cron: '30 02 * * *'  # Runs at 02:30 UTC
-    - cron: '0 12 * * *'    # Runs at 12:00 UTC
+    - cron: '0 12 * * *'   # Runs at 13:00 UTC / 09:00 EDT
+    - cron: '00 16 * * *'  # Runs at 17:00 UTC / 13:00 EDT
+    - cron: '30 00 * * *'  # Runs at 01:30 UTC / 21:30 EDT
 
 concurrency:
   group: tester-queue
