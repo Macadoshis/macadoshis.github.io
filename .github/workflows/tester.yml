@@ -43,6 +43,10 @@ on:
         description: 'M3U tester max failures'
         required: true
         default: 50
+      maxDaysBeforeArchive:
+        description: 'M3U tester max days before archive'
+        required: true
+        default: 7
       streamTester:
         description: 'M3U stream tester'
         type: choice
@@ -145,7 +149,7 @@ jobs:
         run: |
           cd repo
           # do not output progression
-          tools/./m3u-tester --m3uLocation="../m3u/${{ inputs.m3u }}" --minSuccess=${{ inputs.minSuccess || 30 }} --maxFailures=${{ inputs.maxFailures || 50 }} --renamePrefix="_" --renameOnFailure="true" --archiveOnExceededFailure="true" --maxDaysBeforeArchive=7 --threadsCount=10 --streamTester=${{ inputs.streamTester || 'ffmpeg' }}  > /dev/null 2>&1
+          tools/./m3u-tester --m3uLocation="../m3u/${{ inputs.m3u }}" --minSuccess=${{ inputs.minSuccess || 30 }} --maxFailures=${{ inputs.maxFailures || 50 }} --renamePrefix="_" --renameOnFailure="true" --archiveOnExceededFailure="true" --maxDaysBeforeArchive=${{ inputs.maxDaysBeforeArchive || 7 }} --threadsCount=10 --streamTester=${{ inputs.streamTester || 'ffmpeg' }}  > /dev/null 2>&1
           mv ./${{ env.TESTER_REPORT_FILE }} ../m3u || echo "No ${{ env.TESTER_REPORT_FILE }} file to move"
       - name: Update summary
         run: |
