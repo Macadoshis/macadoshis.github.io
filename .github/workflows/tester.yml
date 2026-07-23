@@ -149,6 +149,7 @@ jobs:
         run: |
           cd repo
           # do not output progression
+          mv ../m3u/${{ env.TESTER_REPORT_FILE }} ./ || echo "No ${{ env.TESTER_REPORT_FILE }} existing yet"
           tools/./m3u-tester --m3uLocation="../m3u/${{ inputs.m3u }}" --minSuccess=${{ inputs.minSuccess || 30 }} --maxFailures=${{ inputs.maxFailures || 50 }} --renamePrefix="_" --renameOnFailure="true" --archiveOnExceededFailure="true" --maxDaysBeforeArchive=${{ inputs.maxDaysBeforeArchive || 7 }} --threadsCount=10 --streamTester=${{ inputs.streamTester || 'ffmpeg' }}  > /dev/null 2>&1
           mv ./${{ env.TESTER_REPORT_FILE }} ../m3u || echo "No ${{ env.TESTER_REPORT_FILE }} file to move"
       - name: Update summary
