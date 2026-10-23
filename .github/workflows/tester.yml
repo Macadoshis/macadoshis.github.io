@@ -38,15 +38,15 @@ on:
       minSuccess:
         description: 'M3U tester min success'
         required: true
-        default: 30
+        default: '30'
       maxFailures:
         description: 'M3U tester max failures'
         required: true
-        default: 50
+        default: '50'
       maxDaysBeforeArchive:
         description: 'M3U tester max days before archive'
         required: true
-        default: 7
+        default: '4'
       streamTester:
         description: 'M3U stream tester'
         type: choice
