@@ -123,4 +123,12 @@ jobs:
               )' tools/generator-config.json \
           | sponge tools/generator-config.json
           tools/./m3u-regenerator --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --m3uLocation="../m3u/${{ inputs.m3u }}" --testM3uFile=${{ inputs.testM3uFile }} --onlyConsiderSucceeded=${{ inputs.onlyConsiderSucceeded }}
+      - name: Push M3U results
+        run: |
+          cd m3u
+          git config user.email "${{ secrets.GIT_USEREMAIL }}"
+          git config user.name "${{ secrets.GIT_USERNAME }}"
+          ./copy.sh > /dev/null
+        env:
+          PGP_PWD: ${{ secrets.PGP_PWD }}
 
