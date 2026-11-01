@@ -102,6 +102,9 @@ jobs:
           # sudo swapon /swapfile
           # free -h
       - name: Run regenerator
+        env:
+          GEMINI_AI_KEYS: ${{ secrets.geminiAiKey }}
+          GEMINI_AI_MODEL: ${{ secrets.geminiAiModel }}
         run: |
           cd repo
           jq '.vodMaxPagePerGenre = ${{ inputs.vodMaxPagePerGenre || 50 }}' config.json | sponge config.json
@@ -109,7 +112,15 @@ jobs:
           jq '.tvgIdPreFill = true' config.json | sponge config.json
           jq '.seriesResolveTitle = true' config.json | sponge config.json
           jq '.maxNumberOfChannelsToTest = 5' config.json | sponge config.json
-          jq '.geminiAiModel = "${{ secrets.geminiAiModel }}"' tools/m3u-regenerator-config.json | sponge config.json
-          jq '.geminiAiKey = "${{ secrets.geminiAiKey }}"' tools/m3u-regenerator-config.json | sponge config.json
+          jq --arg model "$GEMINI_AI_MODEL" \
+            --arg keys "$GEMINI_AI_KEYS" \
+            '.geminiAiModel = $model
+            | .geminiAiKey = (
+                $keys
+                | split(",")
+                | map(gsub("^\\s+|\\s+$"; ""))
+                | map(select(length > 0))
+              )' tools/m3u-regenerator-config.json \
+          | sponge tools/m3u-regenerator-config.json
           npm run m3u-regenerator --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --m3uLocation="../m3u/${{ inputs.m3u }}" --testM3uFile=${{ inputs.testM3uFile }} --onlyConsiderSucceeded=${{ inputs.onlyConsiderSucceeded }}
 
