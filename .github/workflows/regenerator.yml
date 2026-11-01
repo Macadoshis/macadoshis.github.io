@@ -1,0 +1,115 @@
+name: M3U regenerator
+run-name: M3U regenerator
+
+on:
+  workflow_dispatch:
+    inputs:
+      m3u:
+        description: 'M3U file'
+        required: false
+        default: ''
+      streamTester:
+        description: 'M3U stream tester'
+        type: choice
+        options:
+          - ffmpeg
+          - http
+        required: true
+        default: ffmpeg
+      testM3uFile:
+        description: 'Test M3U file'
+        type: boolean
+        required: false
+        default: false
+      onlyConsiderSucceeded:
+        description: 'Only consider M3U present in succeeded.json'
+        type: boolean
+        required: false
+        default: false
+
+#  schedule:
+#    - cron: '0 4 1-31/3 * *'    # Runs at 04:00 UTC every 3 days of the month
+
+concurrency:
+  group: regenerator-queue
+  cancel-in-progress: false
+
+jobs:
+  generator:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout GitHub Repo
+        uses: actions/checkout@v4
+      - name: Clone source repo
+        run: |
+          git config --global credential.helper ""
+          REPO_URL="https://bitbucket.org/SaadBenbouzid/m3u.git"
+          git clone https://${BITBUCKET_USERNAME}:${BITBUCKET_APP_PASSWORD}@${REPO_URL#https://}
+        env:
+          BITBUCKET_USERNAME: ${{ secrets.BB_USERNAME }}
+          BITBUCKET_APP_PASSWORD: ${{ secrets.BB_TOKEN }}
+      - name: Download dropbox files
+        uses: gomes042/gh-actions-dropbox/files/download_zip@60f2d1f429591142b2ed6c2a22fe620b611de460
+        with:
+          DROPBOX_APP_KEY: ${{ secrets.DROPBOX_APP_KEY }}
+          DROPBOX_APP_SECRET: ${{ secrets.DROPBOX_APP_SECRET }}
+          DROPBOX_REFRESH_TOKEN: ${{ secrets.DROPBOX_REFRESH_TOKEN }}
+          SOURCE_PATH: /files
+          DEST_PATH: ./dropbox.zip
+      - name: Unzip dropbox files
+        run: |
+          unzip -q dropbox.zip -d dropbox
+          ls -lrth dropbox/files
+      - name: Clone repo and restore files
+        run: |
+          git clone https://x-access-token:${{ secrets.STALKER_REPO_PAT }}@github.com/${{ secrets.SOURCE_REPO }} repo
+          
+          cp dropbox/files/succeeded.json repo/tools/succeeded.json
+          cp dropbox/files/generator-config.json repo/tools/generator-config.json
+      - name: Restore m3u files
+        run: |
+          cd m3u
+          chmod u+x *.sh
+          ./restore.sh > /dev/null
+          echo "`ls *.m3u | wc -l` files restored"
+        env:
+          PGP_PWD: ${{ secrets.PGP_PWD }}
+      - name: Configure NODE
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ vars.NODE_VERSION }}
+      - name: Prepare environment
+        run: |
+          cd repo
+          node -v
+          npm -v
+          npm config set loglevel info
+          chmod u+x configure
+          chmod u+x tools/iptv-generator
+          # ./configure
+          npm install
+          # sudo add-apt-repository ppa:savoury1/ffmpeg4
+          sudo apt update
+          sudo apt install ffmpeg moreutils
+          rm -rf ffmpeg ffprobe
+          ln -s "$(which ffmpeg)" ./ffmpeg
+          ln -s "$(which ffprobe)" ./ffprobe
+          # sudo fallocate -l 4G /swapfile
+          # sudo chmod 600 /swapfile
+          # sudo mkswap /swapfile
+          # sudo swapon /swapfile
+          # free -h
+      - name: Run regenerator
+        run: |
+          cd repo
+          jq '.vodMaxPagePerGenre = ${{ inputs.vodMaxPagePerGenre || 50 }}' config.json | sponge config.json
+          jq '.vodOrdering = "rating"' config.json | sponge config.json
+          jq '.tvgIdPreFill = true' config.json | sponge config.json
+          jq '.seriesResolveTitle = true' config.json | sponge config.json
+          jq '.maxNumberOfChannelsToTest = 5' config.json | sponge config.json
+          jq '.geminiAiModel = "${{ secrets.geminiAiModel }}"' tools/m3u-regenerator-config.json | sponge config.json
+          jq '.geminiAiKey = "${{ secrets.geminiAiKey }}"' tools/m3u-regenerator-config.json | sponge config.json
+          npm run m3u-regenerator --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --m3uLocation="../m3u/${{ inputs.m3u }}" --testM3uFile=${{ inputs.testM3uFile }} --onlyConsiderSucceeded=${{ inputs.onlyConsiderSucceeded }}
+
