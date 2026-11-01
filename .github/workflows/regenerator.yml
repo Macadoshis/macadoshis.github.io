@@ -87,7 +87,7 @@ jobs:
           npm -v
           npm config set loglevel info
           chmod u+x configure
-          chmod u+x tools/iptv-generator
+          chmod u+x tools/m3u-regenerator
           # ./configure
           npm install
           # sudo add-apt-repository ppa:savoury1/ffmpeg4
@@ -122,5 +122,5 @@ jobs:
                 | map(select(length > 0))
               )' tools/m3u-regenerator-config.json \
           | sponge tools/m3u-regenerator-config.json
-          npm run m3u-regenerator --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --m3uLocation="../m3u/${{ inputs.m3u }}" --testM3uFile=${{ inputs.testM3uFile }} --onlyConsiderSucceeded=${{ inputs.onlyConsiderSucceeded }}
+          tools/./m3u-regenerator --streamTester=${{ inputs.streamTester || 'ffmpeg' }} --m3uLocation="../m3u/${{ inputs.m3u }}" --testM3uFile=${{ inputs.testM3uFile }} --onlyConsiderSucceeded=${{ inputs.onlyConsiderSucceeded }}
 
