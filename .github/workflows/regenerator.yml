@@ -31,7 +31,7 @@ on:
 #    - cron: '0 4 1-31/3 * *'    # Runs at 04:00 UTC every 3 days of the month
 
 concurrency:
-  group: regenerator-queue
+  group: generator-queue
   cancel-in-progress: false
 
 jobs:
