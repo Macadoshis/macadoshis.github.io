@@ -59,7 +59,7 @@ jobs:
       contents: read
     steps:
       - name: Checkout GitHub Repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Clone source repo
         run: |
           git config --global credential.helper ""
@@ -118,7 +118,7 @@ jobs:
           echo -e "| VOD     | `ls vod-*.m3u | wc -l || echo "0"`     |" >> $GITHUB_STEP_SUMMARY
           echo -e "| SERIES  | `ls series-*.m3u | wc -l || echo "0"`  |" >> $GITHUB_STEP_SUMMARY
       - name: Configure NODE
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ vars.NODE_VERSION }}
       - name: Prepare environment

@@ -41,7 +41,7 @@ jobs:
       contents: read
     steps:
       - name: Checkout GitHub Repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Clone source repo
         run: |
           git config --global credential.helper ""
@@ -77,7 +77,7 @@ jobs:
         env:
           PGP_PWD: ${{ secrets.PGP_PWD }}
       - name: Configure NODE
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: ${{ vars.NODE_VERSION }}
       - name: Prepare environment
